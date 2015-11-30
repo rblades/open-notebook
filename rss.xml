@@ -2,19 +2,33 @@
 <rss version="2.0">
 <channel>
     <title>Example Site</title>
-    <link>/</link>
+    <link>//open-notebook</link>
     <description>Example Site Description</description>
     
     <item>
+        <title>test 2</title>
+        <link>//open-notebook/Test2.html</link>
+        <pubDate>Mon, 30 Nov 2015 11:46:50 EST</pubDate>
+        <description>new Test...</description>
+    </item>    
+    
+    <item>
+        <title>README</title>
+        <link>//open-notebook/README.html</link>
+        <pubDate>Mon, 30 Nov 2015 11:45:28 EST</pubDate>
+        <description> notebook...</description>
+    </item>    
+    
+    <item>
         <title>Test Note</title>
-        <link>/Test.html</link>
+        <link>//open-notebook/Test.html</link>
         <pubDate>Mon, 30 Nov 2015 11:36:59 EST</pubDate>
         <description>Test...</description>
     </item>    
     
     <item>
         <title>Welcome</title>
-        <link>/index.html</link>
+        <link>//open-notebook/index.html</link>
         <pubDate>Sun, 29 Nov 2015 13:45:03 EST</pubDate>
         <description>The default PyKwiki startup page.</description>
     </item>    

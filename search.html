@@ -6,9 +6,9 @@
     
     
     <title>Search | Example Site</title>
-    <link rel="stylesheet" href="/static/bootstrap3/css/bootstrap.css">
-    <link rel="stylesheet" href="/static/bootstrap3/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="/static/codehilite/manni.css">
+    <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
+    <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <style type="text/css">
     html, body { height: 100%; }
@@ -100,7 +100,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Home</a>
+        <a class="navbar-brand" href="/open-notebook/">Home</a>
     </div>
     <div class="navbar-collapse collapse" style="max-height: none;">
     <ul class="nav navbar-nav">
@@ -133,7 +133,7 @@
 
     <form class="navbar-form navbar-right" role="search" 
         method="get"
-        action="/search.html">
+        action="/open-notebook/search.html">
       <div class="form-group">
         <input type="text" name="q" class="form-control" placeholder="Search">
       </div>
@@ -232,7 +232,7 @@ function list_posts_by_query(search) {
 
 function index_cb(data) { 
     idx = data;
-    $.get('/posts.json',
+    $.get('/open-notebook/posts.json',
         function(data) { 
             if(data) {
                 post_data_cb(data);                
@@ -259,7 +259,7 @@ function post_data_cb(data) {
 
 $(document).ready(function() { 
     // Get the search index file
-    $.get('/idx.json',
+    $.get('/open-notebook/idx.json',
         function(data) { 
             if(data) {
                 index_cb(data);                
@@ -299,7 +299,11 @@ $(document).ready(function() {
       <div class="panel-body">
         <ul>
         
-            <li><a href="/Test.html">Test Note</a></li>
+            <li><a href="//open-notebook/README.html">README</a></li>
+        
+            <li><a href="//open-notebook/Test.html">Test Note</a></li>
+        
+            <li><a href="//open-notebook/Test2.html">test 2</a></li>
         
         </ul>
       </div>
@@ -319,7 +323,7 @@ $(document).ready(function() {
       <div class="panel-body">
         <ul>
         
-            <li><a href="/index.html">Welcome</a></li>
+            <li><a href="//open-notebook/index.html">Welcome</a></li>
         
         </ul>
       </div>
@@ -394,12 +398,12 @@ $(document).ready(function() {
 
 </div>
 
-<script src="/static/bootstrap3/js/bootstrap.min.js"></script>
-<script src="/static/mustachejs/mustache.js"></script>
+<script src="/open-notebook/static/bootstrap3/js/bootstrap.min.js"></script>
+<script src="/open-notebook/static/mustachejs/mustache.js"></script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <script src="/static/respond.min.js"></script>
+  <script src="/open-notebook/static/respond.min.js"></script>
 <![endif]-->   
 
 </body>
