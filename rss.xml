@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
-    <title>Example Site</title>
+    <title>Open Research Notebook</title>
     <link>http://rblades.github.io//open-notebook</link>
-    <description>Example Site Description</description>
+    <description>Open Research Notebook</description>
+    
+    <item>
+        <title>Soundscapes for Empathy and Affect</title>
+        <link>http://rblades.github.io//open-notebook/Soundscapes for Empathy and Affect.html</link>
+        <pubDate>Mon, 30 Nov 2015 19:03:05 EST</pubDate>
+        <description>Phenomenology is the best approach in my view because it looks at sound through experience. This is limited of course because it is *only* human experience. It is also a view of the world created by western philosophy, not used by the best people (i.e. Heidegger was a Nazi). Phenomenology,...</description>
+    </item>    
     
     <item>
         <title>The Thinginess of Sound</title>
         <link>http://rblades.github.io//open-notebook/The Thinginess of Sound.html</link>
-        <pubDate>Mon, 30 Nov 2015 18:53:11 EST</pubDate>
+        <pubDate>Mon, 30 Nov 2015 19:01:56 EST</pubDate>
         <description>Ian Hodder writes in *Entangled* about ubiquity (pp. 102-103) *we tend to forget the history of things because: we do not need to know how something works until it breaks down *we work without knowing the histories of things; our habitual routinization with things; working of things are often hidden;...</description>
     </item>    
     
@@ -17,13 +24,6 @@
         <link>http://rblades.github.io//open-notebook/All Sound is Imagined.html</link>
         <pubDate>Mon, 30 Nov 2015 18:50:54 EST</pubDate>
         <description>The philosopher Don Ihde wrote in *Listening and Voice* (1976) that *119: There is an imaginative mode to hearing *122: remembering sound is an imaginative act that implies inner experience - imaginative acts implicate the self Similarly Mark Grimshaw and Tom Garner write in *Sonic Virtuality* (2014) that sound waves...</description>
-    </item>    
-    
-    <item>
-        <title>Soundscapes for Empathy and Affect</title>
-        <link>http://rblades.github.io//open-notebook/Soundscapes for Empathy and Affect.html</link>
-        <pubDate>Mon, 30 Nov 2015 18:46:29 EST</pubDate>
-        <description>[[ site: Soundscapes for Empathy and Affect tags: [empathy] [affect] ]] Phenomenology is the best approach in my view because it looks at sound through experience. This is limited of course because it is *only* human experience. It is also a view of the world created by western philosophy, not...</description>
     </item>    
     
     <item>
