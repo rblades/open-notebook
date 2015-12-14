@@ -6,10 +6,24 @@
     <description>Open Research Notebook</description>
     
     <item>
+        <title>Untitled Note</title>
+        <link>http://rblades.github.io//open-notebook/Untitled Note.html</link>
+        <pubDate>Thu, 10 Dec 2015 23:18:50 EST</pubDate>
+        <description>salience landscape their sonification is not yours Why I interview people - to understand their salience landscape so that I am not creating something misguided - what level of moral accountability do I hold them to But not total relativism because, at least in an abstract understanding, being truthful is...</description>
+    </item>    
+    
+    <item>
+        <title>The Importance of Visualization</title>
+        <link>http://rblades.github.io//open-notebook/The Importance of Visualization.html</link>
+        <pubDate>Tue, 08 Dec 2015 13:52:48 EST</pubDate>
+        <description>How I visualize this project effects its history, from my map visualization to the github desktop flow visual for historiography...</description>
+    </item>    
+    
+    <item>
         <title>Audio in pykwiki</title>
         <link>http://rblades.github.io//open-notebook/Audio in pykwiki.html</link>
-        <pubDate>Mon, 07 Dec 2015 14:43:40 EST</pubDate>
-        <description>Below is an audio clip of me working, with talking around the last minute. Simply paste this code into nvALT, filling in the source with your audio (as a file or URL) `audio src="*your source*" controls preload/audio` audio src="http://bladesrob.com/soundscape-audio/151110_0082.wav" controls preload/audio...</description>
+        <pubDate>Mon, 07 Dec 2015 14:45:30 EST</pubDate>
+        <description>Below is an audio clip of me working, with talking around the last minute. Simply paste this code into nvALT, filling in the source with your audio (as a file or URL) `audio src="your source" controls preload/audio` audio src="http://bladesrob.com/soundscape-audio/151110_0082.wav" controls preload/audio...</description>
     </item>    
     
     <item>
