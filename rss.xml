@@ -6,16 +6,9 @@
     <description>Open Research Notebook</description>
     
     <item>
-        <title>Untitled Note</title>
-        <link>http://rblades.github.io//open-notebook/Untitled Note.html</link>
-        <pubDate>Sat, 19 Dec 2015 22:51:54 EST</pubDate>
-        <description>test description...</description>
-    </item>    
-    
-    <item>
         <title>Platform-Studies</title>
         <link>http://rblades.github.io//open-notebook/Platform-Studies.html</link>
-        <pubDate>Sat, 19 Dec 2015 22:36:42 EST</pubDate>
+        <pubDate>Sat, 19 Dec 2015 22:54:38 EST</pubDate>
         <description>Combatting feature creep - want the digital to be a part of the history, not just add cool features for the hell of it, but add then for userbility, clean interface, etc. Angular does just this - avoid linear and hyperlinking. There were a lot of features I wanted to...</description>
     </item>    
     
