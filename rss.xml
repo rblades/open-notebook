@@ -8,8 +8,8 @@
     <item>
         <title>Leaflet-Storymap-Audio</title>
         <link>http://rblades.github.io//open-notebook/Leaflet-Storymap-Audio.html</link>
-        <pubDate>Wed, 20 Jan 2016 10:10:04 EST</pubDate>
-        <description>I wracked my brain for a whole day but I did it! I added audio to Jack Dougherty's [leaflet storymap](https://github.com/JackDougherty/leaflet-storymap). To do this: 1. Open your terminal and `cd` to the `leaflet-storymap` directory 2. `mkdir` audio 3. Add your audio files to this new folder 4. Open `script.js` 5. Underneath...</description>
+        <pubDate>Wed, 20 Jan 2016 10:15:33 EST</pubDate>
+        <description>I wracked my brain for a whole day but I did it! I added audio to Jack Dougherty's [leaflet storymap](https://github.com/JackDougherty/leaflet-storymap). To do this: 1. Open your terminal and `cd` to the `leaflet-storymap` directory 2. Make a new folder for audio files `mkdir audio` 3. Add your audio files to this...</description>
     </item>    
     
     <item>
