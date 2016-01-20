@@ -52,22 +52,22 @@
 </li>
 <li>
 <p>Underneath the <code>var source</code> code add </p>
-<pre class="codehilite"><code>  `var audio = $('&lt;audio&gt;&lt;/audio&gt;', {
+<pre class="codehilite"><code>  var audio = $('&lt;audio&gt;&lt;/audio&gt;', {
     src: feature.properties['audio'],
     controls: 'controls',
     preload: 'auto',
-  });`</code></pre>
+  });</code></pre>
 
 
 </li>
 <li>
-<p>Then, below the variables append audio to the container: <code>container.append(chapter).append(image).append(source).*append(audio)*.append(description);</code></p>
+<p>Then, below the variables append audio to the container: <code>container.append(chapter).append(image).append(source).append(audio).append(description);</code></p>
 </li>
 <li>
 <p>Open <code>data.gejson</code></p>
 </li>
 <li>
-<p>After your <code>"source-link"</code> add <code>"audio": "audio/*yourfile.mp3*"</code></p>
+<p>After your <code>"source-link"</code> add <code>"audio": "audio/yourfile.mp3"</code></p>
 </li>
 <li>
 <p>Done!</p>
