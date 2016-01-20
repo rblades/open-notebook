@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <meta name="description" content="Open Research Notebook">
-<meta name="keywords" content="example, pykwiki">
+<meta name="keywords" content="javascript,audio">
 
-    <title>Untitled Note | Open Research Notebook</title>
+    <title>Leaflet-Storymap-Audio | Open Research Notebook</title>
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
@@ -149,8 +149,30 @@
 
 <p>
 
+    <a class="label label-default"
+        href="/search.html?t=javascript">javascript <b class="glyphicon glyphicon-tag"></b></a>
+
+    <a class="label label-default"
+        href="/search.html?t=audio">audio <b class="glyphicon glyphicon-tag"></b></a>
+
 </p>
-<p>test description</p>
+<p>I wracked my brain for a whole day but I did it! I added audio to Jack Dougherty's <a href="https://github.com/JackDougherty/leaflet-storymap">leaflet storymap</a>.</p>
+<p>To do this:
+1. Open your terminal and <code>cd</code> to the <code>leaflet-storymap</code> directory
+2. <code>mkdir</code> audio
+3. Add your audio files to this new folder
+4. Open <code>script.js</code>
+5. Underneath the <code>var source</code> code add 
+          <code>var audio = $('&lt;audio&gt;&lt;/audio&gt;', {
+            src: feature.properties['audio'],
+            controls: 'controls',
+            preload: 'auto',
+          });</code>
+6. Then, below the variables append audio to the container: <code>container.append(chapter).append(image).append(source).*append(audio)*.append(description);</code>
+7. Open <code>data.gejson</code>
+8. After your <code>"source-link"</code> add <code>"audio": "audio/*yourfile.mp3*"</code>
+9. Done!</p>
+<p>It is not perfect. It is just a simple audio control that needs to have some stylistic adjustments. Also, I would rather have a glyphicon play/pause. I will update once I get that going. But for now, audio is functioning!</p>
 
 </div>
 </div><!-- End #wrap -->

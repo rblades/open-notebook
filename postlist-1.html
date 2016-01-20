@@ -29,16 +29,45 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
+        <a href="http://rblades.github.io//open-notebook/Untitled Note.html">Leaflet-Storymap-Audio</a> 
+        <span class="pull-right text-muted">2016-01-20</span>
+    </div>
+    <div class="panel-body">
+        
+            <div class="htmltruncate-md">
+                <p>I wracked my brain for a whole day but I did it! I added audio to Jack Dougherty's <a href="https://github.com/JackDougherty/leaflet-storymap">leaflet storymap</a>.</p>
+<p>To do this:
+1. Open your terminal and <code>cd</code> to the <code>leaflet-storymap</code> directory
+2. <code>mkdir</code> audio
+3. Add your audio files to this new folder
+4. Open <code>script.js</code>
+5. Underneath the <code>var source</code> code add 
+          <code>var audio = $('&lt;audio&gt;&lt;/audio&gt;', {
+            src: feature.properties['audio'],
+            controls: 'controls',
+            preload: 'auto',
+          });</code>
+6. Then, below the variables append audio to the container: <code>container.append(chapter).append(image).append(source).*append(audio)*.append(description);</code>
+7. Open <code>data.gejson</code>
+8. After your <code>"source-link"</code> add <code>"audio": "audio/*yourfile.mp3*"</code>
+9. Done!</p>
+<p>It is not perfect. It is just a simple audio control that needs to have some stylistic adjustments. Also, I would rather have a glyphicon play/pause. I will update once I get that going. But for now, audio is functioning!</p>
+                <div class="htmltruncate-bottom"></div>
+            </div>
+            <a href="http://rblades.github.io//open-notebook/Untitled Note.html" class="btn btn-default">...</a>
+        
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
         <a href="http://rblades.github.io//open-notebook/Welcome-HIST5702!.html">Welcome-HIST5702!</a> 
         <span class="pull-right text-muted">2016-01-17</span>
     </div>
     <div class="panel-body">
         
             <div class="htmltruncate-md">
-                <p>[[
-title: Welcome-HIST5702!
-tags: [HIST5702]</p>
-<h1 id="happy-to-start-hist5702">Happy to Start HIST5702!</h1>
+                <h1 id="happy-to-start-hist5702">Happy to Start HIST5702!</h1>
 <p>I love GitHub! It is easy to push content to it. I also love the fact that I can run a free website from your account. I currently run <a href="http://bladesrob.com">my own site</a> with <a href="http://reclaimhosting.com/">Reclaim Hosting</a>. However, I also run my grad work at <a href="http://rblades.github.io">rblades.github.io</a> (with an <a href="http://rblades.github.io/open-notebook">open notebook</a> using <a href="http://brettterpstra.com/projects/nvalt/">nvALT</a>).</p>
 <p><img alt="image not responding" src="https://pixabay.com/static/uploads/photo/2012/04/10/23/42/document-27091_960_720.png" /></p>
 <p>In this course I get to learn while helping others. And it isn't just easy for me because I already knew GitHub, markdown, and other programs, software, and applications coming in. (I used Markdown to write a tutorial for the <a href="https://opendatakit.org/">Open Data Kit</a> for the <a href="http://programminghistorian.org/">Programming Historian</a> - <em>Still in development</em>.) For instance, I have learned how GitHub and other programs play with Windows (I use a Mac). I also learned on this site that markdown can store links in the following format:</p>
@@ -134,24 +163,6 @@ tags: [HIST5702]</p>
                 <div class="htmltruncate-bottom"></div>
             </div>
             <a href="http://rblades.github.io//open-notebook/Hitchcock-6.html" class="btn btn-default">...</a>
-        
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Hitchcock-5.html">Hitchcock-5</a> 
-        <span class="pull-right text-muted">2016-01-17</span>
-    </div>
-    <div class="panel-body">
-        
-            <div class="htmltruncate-md">
-                <p>There is an element of augmented reality in the layers of these digital sources. A source code is emulated as an interface. It is easy, then, to get caught up in the habit of clicking and getting. Digital humanists must learn the dirty art of doing the work themselves, least seeing how it is constructed. As much as there are digital tools for historical data, we need tools to help us understand underlying code structures. For example, <a href="https://webmaker.org/en-US/goggles">Mozilla web goggles</a> that show the elements of a web page.</p>
-<h3 id="bibliography">Bibliography</h3>
-<p>Hitchcock, Tim. "<a href="http://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html">Big Data for Dead People: Digital Readings and the Conundrums of Positivism</a>." December 9, 2013.</p>
-                <div class="htmltruncate-bottom"></div>
-            </div>
-            <a href="http://rblades.github.io//open-notebook/Hitchcock-5.html" class="btn btn-default">...</a>
         
     </div>
 </div>
