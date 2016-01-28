@@ -6,6 +6,13 @@
     <description>Open Research Notebook</description>
     
     <item>
+        <title>Untitled Note</title>
+        <link>http://rblades.github.io//open-notebook/Untitled Note.html</link>
+        <pubDate>Thu, 28 Jan 2016 09:55:30 EST</pubDate>
+        <description>pembroke fb group is a serious community around which people organize their lives and memory. I am not able to take that away from them. what is my relation to memory? Obviously immediately nana; she is like baba, helping me so much by her own volition - but what else?...</description>
+    </item>    
+    
+    <item>
         <title>Leaflet-Storymap-Audio</title>
         <link>http://rblades.github.io//open-notebook/Leaflet-Storymap-Audio.html</link>
         <pubDate>Wed, 20 Jan 2016 10:15:33 EST</pubDate>
@@ -136,13 +143,6 @@
         <link>http://rblades.github.io//open-notebook/Open-Access-and-Social-Media.html</link>
         <pubDate>Sat, 26 Dec 2015 15:01:19 EST</pubDate>
         <description>My own Facebook page has not done that well. Maybe it is an issue of how I am promoting it. I have sort of left it because the existing Pembroke Facebook group is great. Sure, it is its own specific public. But it has opened up opportunities for me. I...</description>
-    </item>    
-    
-    <item>
-        <title>Platform-Studies</title>
-        <link>http://rblades.github.io//open-notebook/Platform-Studies.html</link>
-        <pubDate>Sat, 19 Dec 2015 23:25:24 EST</pubDate>
-        <description>Combatting feature creep - want the digital to be a part of the history, not just add cool features for the hell of it, but add then for userbility, clean interface, etc. Angular does just this - avoid linear and hyperlinking. There were a lot of features I wanted to...</description>
     </item>    
     
 </channel>

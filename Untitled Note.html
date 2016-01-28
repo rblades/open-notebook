@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <meta name="description" content="Open Research Notebook">
-<meta name="keywords" content="javascript,audio">
+<meta name="keywords" content="example, pykwiki">
 
-    <title>Leaflet-Storymap-Audio | Open Research Notebook</title>
+    <title>Untitled Note | Open Research Notebook</title>
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
@@ -149,52 +149,13 @@
 
 <p>
 
-    <a class="label label-default"
-        href="/search.html?t=javascript">javascript <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=audio">audio <b class="glyphicon glyphicon-tag"></b></a>
-
 </p>
-<p>I wracked my brain for a whole day but I did it! I added audio to Jack Dougherty's <a href="https://github.com/JackDougherty/leaflet-storymap">leaflet storymap</a>.</p>
-<p>To do this:</p>
-<ol>
-<li>
-<p>Open your terminal and <code>cd</code> to the <code>leaflet-storymap</code> directory</p>
-</li>
-<li>
-<p><code>mkdir</code> audio</p>
-</li>
-<li>
-<p>Add your audio files to this new folder</p>
-</li>
-<li>
-<p>Open <code>script.js</code></p>
-</li>
-<li>
-<p>Underneath the <code>var source</code> code add </p>
-<pre class="codehilite"><code>  `var audio = $('&lt;audio&gt;&lt;/audio&gt;', {
-    src: feature.properties['audio'],
-    controls: 'controls',
-    preload: 'auto',
-  });`</code></pre>
-
-
-</li>
-<li>
-<p>Then, below the variables append audio to the container: <code>container.append(chapter).append(image).append(source).*append(audio)*.append(description);</code></p>
-</li>
-<li>
-<p>Open <code>data.gejson</code></p>
-</li>
-<li>
-<p>After your <code>"source-link"</code> add <code>"audio": "audio/*yourfile.mp3*"</code></p>
-</li>
-<li>
-<p>Done!</p>
-</li>
-</ol>
-<p>It is not perfect. It is just a simple audio control that needs to have some stylistic adjustments. Also, I would rather have a glyphicon play/pause. I will update once I get that going. But for now, audio is functioning!</p>
+<p>pembroke fb group is a serious community around which people organize their lives and memory. I am not able to take that away from them.</p>
+<p>what is my relation to memory? Obviously immediately nana; she is like baba, helping me so much by her own volition - but what else? the fb group... what else?</p>
+<p>Maps may be different, but not necessarily disruptive since they come from the same cartographic tradition. Just because it is older, does not necessarily mean it is different.</p>
+<p>given machine and impact</p>
+<p>I also have to be careful not to get kicked out of the Pembroke group for advertising my page too much; need to give back to community.</p>
+<p>I am finding more and more how small my publics are that I interact with.</p>
 
 </div>
 </div><!-- End #wrap -->
@@ -208,15 +169,41 @@
         </div>
 
         
+        <div class="social-div">
+            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=watch"
+                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=fork"
+                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
+        </div>
+        
 
         
 
+        
+        <div class="social-div">
+        <a href="https://twitter.com/twitter.com/BladesRob" class="twitter-follow-button" data-show-count="false">Follow @twitter.com/BladesRob</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            </script>
+        </div>
         
 
 
         <div class="clearfix"></div>
     </div>
 
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73033829-1', 'http://rblades.github.io/open-notebook');
+      ga('send', 'pageview');
+
+    </script>
     
 
 </div>
