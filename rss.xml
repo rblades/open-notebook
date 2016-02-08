@@ -2,147 +2,147 @@
 <rss version="2.0">
 <channel>
     <title>Open Research Notebook</title>
-    <link>http://rblades.github.io//open-notebook</link>
+    <link>http://pembrokesoundscapes.ca//open-notebook</link>
     <description>Open Research Notebook</description>
     
     <item>
+        <title>Untitled Note</title>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Untitled Note.html</link>
+        <pubDate>Fri, 05 Feb 2016 14:31:04 EST</pubDate>
+        <description>pembroke fb group is a serious community around which people organize their lives and memory. I am not able to take that away from them. what is my relation to memory? Obviously immediately nana; she is like baba, helping me so much by her own volition - but what else?...</description>
+    </item>    
+    
+    <item>
+        <title>Pandoc</title>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Pandoc.html</link>
+        <pubDate>Sun, 31 Jan 2016 11:43:13 EST</pubDate>
+        <description>...</description>
+    </item>    
+    
+    <item>
         <title>WGET-and-Data-Mining-the-Internet-Archive</title>
-        <link>http://rblades.github.io//open-notebook/WGET-and-Data-Mining-the-Internet-Archive.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/WGET-and-Data-Mining-the-Internet-Archive.html</link>
         <pubDate>Sun, 31 Jan 2016 11:41:23 EST</pubDate>
         <description> Wget There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is `-r` or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!...</description>
     </item>    
     
     <item>
-        <title>Untitled Note</title>
-        <link>http://rblades.github.io//open-notebook/Untitled Note.html</link>
-        <pubDate>Sat, 30 Jan 2016 15:16:20 EST</pubDate>
-        <description>pembroke fb group is a serious community around which people organize their lives and memory. I am not able to take that away from them. what is my relation to memory? Obviously immediately nana; she is like baba, helping me so much by her own volition - but what else?...</description>
-    </item>    
-    
-    <item>
         <title>Leaflet-Storymap-Audio</title>
-        <link>http://rblades.github.io//open-notebook/Leaflet-Storymap-Audio.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Leaflet-Storymap-Audio.html</link>
         <pubDate>Wed, 20 Jan 2016 10:15:33 EST</pubDate>
         <description>I wracked my brain for a whole day but I did it! I added audio to Jack Dougherty's [leaflet storymap](https://github.com/JackDougherty/leaflet-storymap). To do this: 1. Open your terminal and `cd` to the `leaflet-storymap` directory 2. Make a new folder for audio files `mkdir audio` 3. Add your audio files to this...</description>
     </item>    
     
     <item>
         <title>Welcome-HIST5702!</title>
-        <link>http://rblades.github.io//open-notebook/Welcome-HIST5702!.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Welcome-HIST5702!.html</link>
         <pubDate>Sun, 17 Jan 2016 15:00:14 EST</pubDate>
         <description> Happy to Start HIST5702! I love GitHub! It is easy to push content to it. I also love the fact that I can run a free website from your account. I currently run [my own site](http://bladesrob.com) with [Reclaim Hosting](http://reclaimhosting.com/). However, I also run my grad work at [rblades.github.io](http://rblades.github.io) (with...</description>
     </item>    
     
     <item>
         <title>Understanding-Digital-Tools</title>
-        <link>http://rblades.github.io//open-notebook/Understanding-Digital-Tools.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Understanding-Digital-Tools.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:45 EST</pubDate>
         <description>Design has sound; rougher designs will have harsher sounds than warm ones. I aim to mix things up Multimedia helps to create a complex perceptual environment rather than just one focused on sounds (Ingold critiques the divide of the senses that soundscapes promote, even unintentionally)....</description>
     </item>    
     
     <item>
         <title>Hitchcock-10</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-10.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-10.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:42 EST</pubDate>
         <description>We are not just distant reading sources - we are distant reading the historicity of these digital tools and the practices and methods entangled in them through years of habit and process. We are taking our critiques into the digital realm to offer Sarah Durrant to historical care and attention...</description>
     </item>    
     
     <item>
         <title>Hitchcock-9</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-9.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-9.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:41 EST</pubDate>
         <description>The digital is an augmented reality in Stuart Eve's terms - that is, a user works in the "real world while visually receiving additional computer generated or modelled information." But even non-digital historical work is an augmented reality in itself since we approach the past by layering sources and drawing...</description>
     </item>    
     
     <item>
         <title>Hitchcock-6</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-6.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-6.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:35 EST</pubDate>
         <description>The current collection of digital material that forms the basis for most of our research is composed of the maudlin leavings of rich dead white men (and some rich dead white women). Until we get around to including the non-cannonical, the non-Western, the non-textual and the non-elite, we are unlikely...</description>
     </item>    
     
     <item>
         <title>Hitchcock-5</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-5.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-5.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:32 EST</pubDate>
         <description>There is an element of augmented reality in the layers of these digital sources. A source code is emulated as an interface. It is easy, then, to get caught up in the habit of clicking and getting. Digital humanists must learn the dirty art of doing the work themselves, least...</description>
     </item>    
     
     <item>
         <title>Hitchcock-4</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-4.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-4.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:31 EST</pubDate>
         <description>Everything has a history. As Hitchcock notes, DH historicity = ideas of codebreaking and 'cracking' from the 20th century. We fall into those same tropes and traps. In my own work on sound studies, this is particularly true of my map: listening has a history formed by years of recorded...</description>
     </item>    
     
     <item>
         <title>Hitchcock-3</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-3.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-3.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:29 EST</pubDate>
         <description>Confronted by people happy to define a point on the earth's surface as three simple numbers, and to claim that it was always so, was a shock. This is not to say that the archaeologists were being naïve, far from it, but that having been trained up as a text...</description>
     </item>    
     
     <item>
         <title>Hitchcock-2</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-2.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-2.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:26 EST</pubDate>
         <description>It feels to me as if our practise as humanists and historians is being driven by the technology, rather than being served by it. We are being driven by it only if we refuse to understand its structure and purpose and then critique it and our understanding of it. Hitchcock...</description>
     </item>    
     
     <item>
         <title>Hitchcock-8</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-8.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-8.html</link>
         <pubDate>Sun, 17 Jan 2016 13:57:08 EST</pubDate>
         <description>There was an industrial revolution involving iron. There was a war in the 1860s and so on. What surprises me most, is that I am not more surprised. In part, I suspect the banal character of most ngrams and network analyses is a reflection of the extent to which books,...</description>
     </item>    
     
     <item>
         <title>Hitchcock-7</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-7.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-7.html</link>
         <pubDate>Sun, 17 Jan 2016 13:57:01 EST</pubDate>
         <description>...big data is using one of the controlling metaphors of 20th-century science, 'code breaking' and applying it to a field that has hitherto resisted the siren call of analytical positivism. Open access for historians can fall into this same issue since they assume it is a matter of sharing everything;...</description>
     </item>    
     
     <item>
         <title>Hitchcock-1</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-1.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Hitchcock-1.html</link>
         <pubDate>Sun, 17 Jan 2016 13:56:29 EST</pubDate>
         <description>And for all the fact that we have mapped and photographed her, Sarah remains most fully represented in the text of her trial. We can so easily reproduce the archives. We get caught up in the fact that we are doing something new. Don't let the digital smokescreen get you!...</description>
     </item>    
     
     <item>
         <title>Goal-of-my-Project</title>
-        <link>http://rblades.github.io//open-notebook/Goal-of-my-Project.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Goal-of-my-Project.html</link>
         <pubDate>Tue, 12 Jan 2016 09:43:29 EST</pubDate>
         <description>Different goals of each soundscape projects: - Field of Sounds to evoke nostalgia, record ambience in space - New York to track the negative impact of sounds in growing urban areas - Ottoman Soundscapes to understand sound within space, the power of sound in urban organization, how places *might have*...</description>
     </item>    
     
     <item>
         <title>Soundscapes_A-Historical-Approach</title>
-        <link>http://rblades.github.io//open-notebook/Soundscapes_A-Historical-Approach.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/Soundscapes_A-Historical-Approach.html</link>
         <pubDate>Fri, 08 Jan 2016 10:59:19 EST</pubDate>
         <description>From [Soundscapes: A Historical Approach](http://econtact.ca/3_4/HistoricalApproach.htm) Sound not only controls space and memory, but the routine that brings about these sounds themselves. It is a feedback loop, to a degree. The sound of the bars vs the sound of the factories. "Let's stay with Week-End. It reflected the transition from a...</description>
     </item>    
     
     <item>
         <title>In-Search-of-Lost-Soundscapes</title>
-        <link>http://rblades.github.io//open-notebook/In-Search-of-Lost-Soundscapes.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/In-Search-of-Lost-Soundscapes.html</link>
         <pubDate>Fri, 08 Jan 2016 10:55:38 EST</pubDate>
         <description>From [In Search of Lost Soundscapes](http://arcade.stanford.edu/blogs/search-lost-soundscapes) Does sound become more positive as time allows it to dissipate? It's value becomes cemented in the present. "Proust complicitously writes to Madame Williams, once these workers are gone after having become part of his routine noises, he would feel the ensuing silence as...</description>
     </item>    
     
     <item>
         <title>The-Ethical-Historian_A-Beautiful-Workflow</title>
-        <link>http://rblades.github.io//open-notebook/The-Ethical-Historian_A-Beautiful-Workflow.html</link>
+        <link>http://pembrokesoundscapes.ca//open-notebook/The-Ethical-Historian_A-Beautiful-Workflow.html</link>
         <pubDate>Fri, 08 Jan 2016 10:55:31 EST</pubDate>
         <description>**Edit:** But not everyone wants to be transparent. There are gender considerations such as discussed [here](https://github.com/programminghistorian/jekyll/issues/152) that I just reconsidered. It doesn't deny the importance of workflow, habits, and productivity - it just causes me to think more about my own status as a white male academic online. I am...</description>
-    </item>    
-    
-    <item>
-        <title>Arbiters-of-Truth</title>
-        <link>http://rblades.github.io//open-notebook/Arbiters-of-Truth.html</link>
-        <pubDate>Mon, 28 Dec 2015 17:01:12 EST</pubDate>
-        <description>I had my first interview today with my Nana, aunt, and mom. It was an interesting session in that they answered questions about their experiences, but they were also showing me places on Google Maps and telling me about where to research. It got me thinking more about the place...</description>
     </item>    
     
 </channel>
