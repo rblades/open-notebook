@@ -8,7 +8,7 @@
     <item>
         <title>Loading-Audio-DAEA</title>
         <link>http://rblades.github.io//open-notebook/Loading-Audio-DAEA.html</link>
-        <pubDate>Sun, 21 Feb 2016 12:51:49 EST</pubDate>
+        <pubDate>Sun, 21 Feb 2016 12:54:16 EST</pubDate>
         <description>Loading Audio into DAEA 1. Open aa-sites-popup.csv 2. After `link` add a comma and `audio` 3. For each `audio` column, add audio html tags: `audio src="test.mp3" controls preload/audio` For audio source, if you are hosting a local file, make sure to complete the path fully. For instance, if your audio...</description>
     </item>    
     
