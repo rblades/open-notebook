@@ -6,6 +6,20 @@
     <description>Open Research Notebook</description>
     
     <item>
+        <title>Loading-Audio-DAEA</title>
+        <link>http://rblades.github.io//open-notebook/Loading-Audio-DAEA.html</link>
+        <pubDate>Sun, 21 Feb 2016 12:40:43 EST</pubDate>
+        <description>Loading Audio into DAEA 1. Open aa-sites-popup.csv 2. After `link` add a comma and `audio` 3. For each `audio` column, add audio html tags: `audio src="test.mp3" controls preload/audio` For audio source, if you are hosting a local file, make sure to complete the path fully. For instance, if your audio...</description>
+    </item>    
+    
+    <item>
+        <title>Audio in pykwiki</title>
+        <link>http://rblades.github.io//open-notebook/Audio in pykwiki.html</link>
+        <pubDate>Sun, 21 Feb 2016 12:29:28 EST</pubDate>
+        <description>Below is an audio clip of me working, with talking around the last minute. Simply paste this code into nvALT, filling in the source with your audio (as a file or URL) `audio src="your source" controls preload/audio` audio src="http://bladesrob.com/soundscape-audio/151110_0082.wav" controls preload/audio...</description>
+    </item>    
+    
+    <item>
         <title>Untitled Note.3</title>
         <link>http://rblades.github.io//open-notebook/Untitled Note.3.html</link>
         <pubDate>Sat, 20 Feb 2016 16:14:58 EST</pubDate>
@@ -129,20 +143,6 @@
         <link>http://rblades.github.io//open-notebook/Hitchcock-2.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:26 EST</pubDate>
         <description>It feels to me as if our practise as humanists and historians is being driven by the technology, rather than being served by it. We are being driven by it only if we refuse to understand its structure and purpose and then critique it and our understanding of it. Hitchcock...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-8</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-8.html</link>
-        <pubDate>Sun, 17 Jan 2016 13:57:08 EST</pubDate>
-        <description>There was an industrial revolution involving iron. There was a war in the 1860s and so on. What surprises me most, is that I am not more surprised. In part, I suspect the banal character of most ngrams and network analyses is a reflection of the extent to which books,...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-7</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-7.html</link>
-        <pubDate>Sun, 17 Jan 2016 13:57:01 EST</pubDate>
-        <description>...big data is using one of the controlling metaphors of 20th-century science, 'code breaking' and applying it to a field that has hitherto resisted the siren call of analytical positivism. Open access for historians can fall into this same issue since they assume it is a matter of sharing everything;...</description>
     </item>    
     
 </channel>

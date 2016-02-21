@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <meta name="description" content="Open Research Notebook">
-<meta name="keywords" content="audio">
+<meta name="keywords" content="example, pykwiki">
 
-    <title>Audio in pykwiki | Open Research Notebook</title>
+    <title>Loading-Audio-DAEA | Open Research Notebook</title>
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
@@ -149,13 +149,15 @@
 
 <p>
 
-    <a class="label label-default"
-        href="/search.html?t=audio">audio <b class="glyphicon glyphicon-tag"></b></a>
-
 </p>
-<p>Below is an audio clip of me working, with talking around the last minute.</p>
-<p>Simply paste this code into nvALT, filling in the source with your audio (as a file or URL) <code>&lt;audio src="your source" controls preload&gt;&lt;/audio&gt;</code></p>
-<p><audio src="http://bladesrob.com/soundscape-audio/151110_0082.wav" controls preload></audio></p>
+<p>Loading Audio into DAEA</p>
+<ol>
+<li>Open aa-sites-popup.csv</li>
+<li>After <code>link</code> add a comma and <code>audio</code></li>
+<li>For each <code>audio</code> column, add audio html tags: <code>&lt;audio src="test.mp3" controls preload&gt;&lt;/audio&gt;</code></li>
+</ol>
+<p>For audio source, if you are hosting a local file, make sure to complete the path fully. For instance, if your audio file <code>test.mp3</code> is hosted in your project folder in <code>sounds</code> the path will be <code>&lt;audio src="sounds/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
+<p>If your audio file is hosted on a url, just put the url in your src: <code>&lt;audio src="http://soundwebsite/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
 
 </div>
 </div><!-- End #wrap -->
@@ -169,15 +171,41 @@
         </div>
 
         
+        <div class="social-div">
+            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=watch"
+                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
+            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=fork"
+                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
+        </div>
+        
 
         
 
+        
+        <div class="social-div">
+        <a href="https://twitter.com/twitter.com/BladesRob" class="twitter-follow-button" data-show-count="false">Follow @twitter.com/BladesRob</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+                    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+            </script>
+        </div>
         
 
 
         <div class="clearfix"></div>
     </div>
 
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73033829-1', 'http://rblades.github.io/open-notebook');
+      ga('send', 'pageview');
+
+    </script>
     
 
 </div>
