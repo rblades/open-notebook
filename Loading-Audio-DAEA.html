@@ -158,6 +158,75 @@
 </ol>
 <p>For audio source, if you are hosting a local file, make sure to complete the path fully. For instance, if your audio file <code>test.mp3</code> is hosted in your project folder in <code>sounds</code> the path will be <code>&lt;audio src="sounds/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
 <p>If your audio file is hosted on a url, just put the url in your src: <code>&lt;audio src="http://soundwebsite/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
+<ol>
+<li>Now we have to edit the map script in <code>index.html</code></li>
+<li>Navigate to the map script in <code>index.html</code>. It will look like this:</li>
+</ol>
+<p>```
+<!-- Initiates Map and pulls data from .CSV --></p>
+<script>
+
+
+
+var map = L.map('map', {
+
+    center: [45.8256661,-77.1182135],
+
+    zoom: 13,
+
+    layers:[
+
+      L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'),
+
+      L.tileLayer('http://warp.worldmap.harvard.edu/maps/tile/4322/{z}/{x}/{y}.png')
+
+    ]
+
+});
+
+
+
+            //enter path for .csv here
+
+            omnivore.csv('sites/aa-sites-popup.csv')
+
+             .on('ready', function(layer) {
+
+
+
+        this.eachLayer(function(marker) {
+
+
+
+            // Bind a popup to each icon based on the same properties
+
+            // Adds coloumns of extra info to marker popup
+
+            marker.bindPopup(marker.toGeoJSON().properties.timePeriod +
+
+                marker.toGeoJSON().properties.siteName + '<br><br> ' +
+
+                marker.toGeoJSON().properties.info + '<br><br> ' +
+
+                marker.toGeoJSON().properties.link, {autoPanPadding: [5,55]});
+
+        });
+
+    })
+
+            .addTo(map);
+
+
+
+</script>
+
+<p>```</p>
+<ol>
+<li>After <code>marker.toGeoJSON().properties.info + '&lt;br&gt;&lt;br&gt; ' +</code>, hit enter to create a new line and add <code>marker.toGeoJSON().properties.audio + '&lt;br&gt;&lt;br&gt;' +</code></li>
+<li>You can choose where to place the audio controls based on your preferences. If you want them after siteName, just add <code>marker.toGeoJSON().properties.audio + '&lt;br&gt;&lt;br&gt;' +</code> </li>
+<li>This binds audio to the leaflet GeoJSON data converted from your <code>aa-sites-popup.csv</code></li>
+<li>That's it!</li>
+</ol>
 
 </div>
 </div><!-- End #wrap -->
@@ -171,41 +240,15 @@
         </div>
 
         
-        <div class="social-div">
-            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=watch"
-                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
-            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=fork"
-                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
-        </div>
-        
 
         
 
-        
-        <div class="social-div">
-        <a href="https://twitter.com/twitter.com/BladesRob" class="twitter-follow-button" data-show-count="false">Follow @twitter.com/BladesRob</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-                    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-            </script>
-        </div>
         
 
 
         <div class="clearfix"></div>
     </div>
 
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-73033829-1', 'http://rblades.github.io/open-notebook');
-      ga('send', 'pageview');
-
-    </script>
     
 
 </div>

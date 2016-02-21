@@ -43,6 +43,75 @@
 </ol>
 <p>For audio source, if you are hosting a local file, make sure to complete the path fully. For instance, if your audio file <code>test.mp3</code> is hosted in your project folder in <code>sounds</code> the path will be <code>&lt;audio src="sounds/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
 <p>If your audio file is hosted on a url, just put the url in your src: <code>&lt;audio src="http://soundwebsite/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
+<ol>
+<li>Now we have to edit the map script in <code>index.html</code></li>
+<li>Navigate to the map script in <code>index.html</code>. It will look like this:</li>
+</ol>
+<p>```
+<!-- Initiates Map and pulls data from .CSV --></p>
+<script>
+
+
+
+var map = L.map('map', {
+
+    center: [45.8256661,-77.1182135],
+
+    zoom: 13,
+
+    layers:[
+
+      L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'),
+
+      L.tileLayer('http://warp.worldmap.harvard.edu/maps/tile/4322/{z}/{x}/{y}.png')
+
+    ]
+
+});
+
+
+
+            //enter path for .csv here
+
+            omnivore.csv('sites/aa-sites-popup.csv')
+
+             .on('ready', function(layer) {
+
+
+
+        this.eachLayer(function(marker) {
+
+
+
+            // Bind a popup to each icon based on the same properties
+
+            // Adds coloumns of extra info to marker popup
+
+            marker.bindPopup(marker.toGeoJSON().properties.timePeriod +
+
+                marker.toGeoJSON().properties.siteName + '<br><br> ' +
+
+                marker.toGeoJSON().properties.info + '<br><br> ' +
+
+                marker.toGeoJSON().properties.link, {autoPanPadding: [5,55]});
+
+        });
+
+    })
+
+            .addTo(map);
+
+
+
+</script>
+
+<p>```</p>
+<ol>
+<li>After <code>marker.toGeoJSON().properties.info + '&lt;br&gt;&lt;br&gt; ' +</code>, hit enter to create a new line and add <code>marker.toGeoJSON().properties.audio + '&lt;br&gt;&lt;br&gt;' +</code></li>
+<li>You can choose where to place the audio controls based on your preferences. If you want them after siteName, just add <code>marker.toGeoJSON().properties.audio + '&lt;br&gt;&lt;br&gt;' +</code> </li>
+<li>This binds audio to the leaflet GeoJSON data converted from your <code>aa-sites-popup.csv</code></li>
+<li>That's it!</li>
+</ol>
                 <div class="htmltruncate-bottom"></div>
             </div>
             <a href="http://rblades.github.io//open-notebook/Loading-Audio-DAEA.html" class="btn btn-default">...</a>
