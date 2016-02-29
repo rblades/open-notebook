@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <meta name="description" content="Open Research Notebook">
-<meta name="keywords" content="HIST5702,command line,windows,python">
+<meta name="keywords" content="HIST5702">
 
-    <title>WGET-and-Data-Mining-the-Internet-Archive | Open Research Notebook</title>
+    <title>Unix-Bash-Regex | Open Research Notebook</title>
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
@@ -152,31 +152,18 @@
     <a class="label label-default"
         href="/search.html?t=HIST5702">HIST5702 <b class="glyphicon glyphicon-tag"></b></a>
 
-    <a class="label label-default"
-        href="/search.html?t=command line">command line <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=windows">windows <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=python">python <b class="glyphicon glyphicon-tag"></b></a>
-
 </p>
-<h2 id="wget">Wget</h2>
-<p>There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is <code>-r</code> or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!</p>
-<p>I think it also comes down to the same old idea of software and platform we embrace - it is all about preference and usage needs.</p>
-<p>So let's do a quick run of wget. </p>
-<h3 id="windows-users">Windows Users</h3>
-<p>Data Mining the Internet archive is hard on Windows. Unix is <code>luv</code>, Unix is <code>lyf</code>.</p>
-<p>The tutorial was not at all geared for you. So beginner's with the command line could be confused. First! Windows does not use the UNIX (read: also mac) command <code>sudo</code>. The command line or Powershell will not recognize this command. </p>
-<p><code>sudo</code> executes a command as an administrator. You will have to type in your computer's password. As a security measure, Unix will not show your password, even as dots as you write.</p>
-<p>Do the following if <code>pip install</code> is not working</p>
-<ol>
-<li>Make sure python is at your root folder <code>C:\</code> So you will have <code>C:\Python27</code></li>
-<li>In the command line at <code>C:\Python27</code> type <code>setx PATH "%PATH%;C:\Python27\Scripts"</code> (<em>NOTE:</em> You may need to restart your computer to run the next command)</li>
-<li>Go back to the folder you want to work in - from that folder in the command line type <code>python -m pip install internetarchive</code></li>
-<li>Profit</li>
-</ol>
+<h2 id="unix">Unix</h2>
+<p>The command line was used to access a computer before the development of Graphical User Interfaces (GUIs). Harkens back to low processing power and lack of a GUI. if you use an old machine, it can take over most of the commands.</p>
+<p>So why use the command line at all anymore?</p>
+<p>Not only do you learn more about your machine, but you begin to master an integral way to access files. You'll have noticed that with the cat command, you see the beginning of regex. In the next lesson, Milligan and Baker go over this more and show what commands like grep and wc can do. We are building towards more powerful regex</p>
+<p>"The primary reason is the seamless experience of working on the command line: you never have to pick up your mouse or touch your track pad, and, although it has a steep learning curve it can eventually become a sole writing environment."</p>
+<p>Vim is a fork of Vi, an editor for the Unix command line. But vim is difficult to understand. Using the command line is a personal choice. But you should set your machine to work for you. The point of these tutorials is that you can tap the potential of the command line and even use it to do anything on the computer.</p>
+<p>You should also read this: http://programminghistorian.org/lessons/preserving-your-research-data suggested by the mining research data article. Mining data, searching, etc. will help you immensely. Meta-data is so important</p>
+<h2 id="regex">Regex</h2>
+<p>Regular expression tutorial makes an important point. This is not about becoming a programmer. Programming takes years to master and you might find it interesting but don't exactly want to get into it. There is a lot of stuff going on in life. That's what these tutorial do - help you modify your workflow and use modern tools and methods to increase productivity. </p>
+<p>You have to know your text at some level to know what to change. Larger files will be more difficult to clean up, more consistent files will be easier, bad OCR will lead to poor results if not cleaned.</p>
+<p>In the end, your platform effects what you can do and what you type: I prefer text wrangler to handle regex. Having data in XML is so helpful because you have a structured file to apply practically anywhere.</p>
 
 </div>
 </div><!-- End #wrap -->

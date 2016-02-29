@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <meta name="description" content="Open Research Notebook">
-<meta name="keywords" content="HIST5702,command line,windows,python">
+<meta name="keywords" content="HIST5702,data">
 
-    <title>WGET-and-Data-Mining-the-Internet-Archive | Open Research Notebook</title>
+    <title>Open-Refine-OCR | Open Research Notebook</title>
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
@@ -153,30 +153,18 @@
         href="/search.html?t=HIST5702">HIST5702 <b class="glyphicon glyphicon-tag"></b></a>
 
     <a class="label label-default"
-        href="/search.html?t=command line">command line <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=windows">windows <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=python">python <b class="glyphicon glyphicon-tag"></b></a>
+        href="/search.html?t=data">data <b class="glyphicon glyphicon-tag"></b></a>
 
 </p>
-<h2 id="wget">Wget</h2>
-<p>There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is <code>-r</code> or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!</p>
-<p>I think it also comes down to the same old idea of software and platform we embrace - it is all about preference and usage needs.</p>
-<p>So let's do a quick run of wget. </p>
-<h3 id="windows-users">Windows Users</h3>
-<p>Data Mining the Internet archive is hard on Windows. Unix is <code>luv</code>, Unix is <code>lyf</code>.</p>
-<p>The tutorial was not at all geared for you. So beginner's with the command line could be confused. First! Windows does not use the UNIX (read: also mac) command <code>sudo</code>. The command line or Powershell will not recognize this command. </p>
-<p><code>sudo</code> executes a command as an administrator. You will have to type in your computer's password. As a security measure, Unix will not show your password, even as dots as you write.</p>
-<p>Do the following if <code>pip install</code> is not working</p>
-<ol>
-<li>Make sure python is at your root folder <code>C:\</code> So you will have <code>C:\Python27</code></li>
-<li>In the command line at <code>C:\Python27</code> type <code>setx PATH "%PATH%;C:\Python27\Scripts"</code> (<em>NOTE:</em> You may need to restart your computer to run the next command)</li>
-<li>Go back to the folder you want to work in - from that folder in the command line type <code>python -m pip install internetarchive</code></li>
-<li>Profit</li>
-</ol>
+<p>This week is all about Dirty Data. As Seth Van Hooland writes with Open Refine, "If you only remember on thing from this lesson, it should be this: <em>all data is dirty, but you can do something about it.</em>"</p>
+<h2 id="open-refine">Open Refine</h2>
+<p>All of these tutorials we are doing either build upon each other or into each other. They are all connected and serve one another. For instance, the <a href="Unix-Bash-Regex">command line</a> tutorial shows us the importance of structuring files. Used in conjunction with Regex, we notice that working with good data is the key to less painful experiences in data mining. </p>
+<p>Open refine is a lot like Regex. Both are used to clean data for mining. Open Refine is a more visual way and much easier way to clean up data. It works well with Linked Open Data which we tackled using <a href="Zotero-SPARQL">SPARQL</a>. However, you can also use regex to clean up your open refine data. </p>
+<p>This tutorial was intuitive and open refine is easy to work with if you follow along. </p>
+<h2 id="ocr">OCR</h2>
+<p>The OCR tutorial begins by laying out the need to create a 'python dictionary' to handle relative data cleaning cases. Because applying one script to an entire document may clean areas with different context. We are going to use Pyton to prepare our data for Regex and other mining methods. </p>
+<p>The point of OCR is not to automate <strong>everything</strong>. We still have to be aware of our data and clean some things manually. For instance, when our script tells us it found 430 page headers, but we know there are 440 pages, we can then clean the other 10 pages. </p>
+<p>OCR reveals an important aspect of open access. Google for instance has digitized millions of books. But open access is not widely a humanities goal. As such, Google has merely made text available without taking much care of making it clean. Such is now the goal of the humanities scholar.</p>
 
 </div>
 </div><!-- End #wrap -->

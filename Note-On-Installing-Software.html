@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <meta name="description" content="Open Research Notebook">
-<meta name="keywords" content="HIST5702,command line,windows,python">
+<meta name="keywords" content="HIST5702">
 
-    <title>WGET-and-Data-Mining-the-Internet-Archive | Open Research Notebook</title>
+    <title>Note-On-Installing-Software | Open Research Notebook</title>
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
@@ -152,31 +152,11 @@
     <a class="label label-default"
         href="/search.html?t=HIST5702">HIST5702 <b class="glyphicon glyphicon-tag"></b></a>
 
-    <a class="label label-default"
-        href="/search.html?t=command line">command line <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=windows">windows <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=python">python <b class="glyphicon glyphicon-tag"></b></a>
-
 </p>
-<h2 id="wget">Wget</h2>
-<p>There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is <code>-r</code> or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!</p>
-<p>I think it also comes down to the same old idea of software and platform we embrace - it is all about preference and usage needs.</p>
-<p>So let's do a quick run of wget. </p>
-<h3 id="windows-users">Windows Users</h3>
-<p>Data Mining the Internet archive is hard on Windows. Unix is <code>luv</code>, Unix is <code>lyf</code>.</p>
-<p>The tutorial was not at all geared for you. So beginner's with the command line could be confused. First! Windows does not use the UNIX (read: also mac) command <code>sudo</code>. The command line or Powershell will not recognize this command. </p>
-<p><code>sudo</code> executes a command as an administrator. You will have to type in your computer's password. As a security measure, Unix will not show your password, even as dots as you write.</p>
-<p>Do the following if <code>pip install</code> is not working</p>
-<ol>
-<li>Make sure python is at your root folder <code>C:\</code> So you will have <code>C:\Python27</code></li>
-<li>In the command line at <code>C:\Python27</code> type <code>setx PATH "%PATH%;C:\Python27\Scripts"</code> (<em>NOTE:</em> You may need to restart your computer to run the next command)</li>
-<li>Go back to the folder you want to work in - from that folder in the command line type <code>python -m pip install internetarchive</code></li>
-<li>Profit</li>
-</ol>
+<p>Be careful where you install software. I recently helped a colleague experiencing python problems:</p>
+<p>We attempted to install the internet archive for python to no avail on a mac. So mac already comes with python. I noticed that python was being called from one directory, while downloading to another. So nothing was really working. There was an accidental install of python through home-brew. </p>
+<p>So I <code>brew uninstall python</code> and then that fixed the problem. It reverted to calling mac's install of python.</p>
+<p>Always watch where you install items. This is the importance of the command line!</p>
 
 </div>
 </div><!-- End #wrap -->

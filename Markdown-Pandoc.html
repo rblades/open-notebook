@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 <meta name="description" content="Open Research Notebook">
-<meta name="keywords" content="HIST5702,command line,windows,python">
+<meta name="keywords" content="HIST5702,pandoc,markdown">
 
-    <title>WGET-and-Data-Mining-the-Internet-Archive | Open Research Notebook</title>
+    <title>Markdown-Pandoc | Open Research Notebook</title>
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap.css">
     <link rel="stylesheet" href="/open-notebook/static/bootstrap3/css/bootstrap-theme.css">
     <link rel="stylesheet" href="/open-notebook/static/codehilite/manni.css">
@@ -153,30 +153,16 @@
         href="/search.html?t=HIST5702">HIST5702 <b class="glyphicon glyphicon-tag"></b></a>
 
     <a class="label label-default"
-        href="/search.html?t=command line">command line <b class="glyphicon glyphicon-tag"></b></a>
+        href="/search.html?t=pandoc">pandoc <b class="glyphicon glyphicon-tag"></b></a>
 
     <a class="label label-default"
-        href="/search.html?t=windows">windows <b class="glyphicon glyphicon-tag"></b></a>
-
-    <a class="label label-default"
-        href="/search.html?t=python">python <b class="glyphicon glyphicon-tag"></b></a>
+        href="/search.html?t=markdown">markdown <b class="glyphicon glyphicon-tag"></b></a>
 
 </p>
-<h2 id="wget">Wget</h2>
-<p>There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is <code>-r</code> or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!</p>
-<p>I think it also comes down to the same old idea of software and platform we embrace - it is all about preference and usage needs.</p>
-<p>So let's do a quick run of wget. </p>
-<h3 id="windows-users">Windows Users</h3>
-<p>Data Mining the Internet archive is hard on Windows. Unix is <code>luv</code>, Unix is <code>lyf</code>.</p>
-<p>The tutorial was not at all geared for you. So beginner's with the command line could be confused. First! Windows does not use the UNIX (read: also mac) command <code>sudo</code>. The command line or Powershell will not recognize this command. </p>
-<p><code>sudo</code> executes a command as an administrator. You will have to type in your computer's password. As a security measure, Unix will not show your password, even as dots as you write.</p>
-<p>Do the following if <code>pip install</code> is not working</p>
-<ol>
-<li>Make sure python is at your root folder <code>C:\</code> So you will have <code>C:\Python27</code></li>
-<li>In the command line at <code>C:\Python27</code> type <code>setx PATH "%PATH%;C:\Python27\Scripts"</code> (<em>NOTE:</em> You may need to restart your computer to run the next command)</li>
-<li>Go back to the folder you want to work in - from that folder in the command line type <code>python -m pip install internetarchive</code></li>
-<li>Profit</li>
-</ol>
+<h2 id="markdown">Markdown</h2>
+<p>Markdown is a sustainable method to write. Your text becomes simply text read by the computer rather than text with stylesheets and all sorts of encoding attached to it. Thus anyone can copy and paste it, read it, etc. all from the source. Markdown, then, is in many ways a way to write collaborative documents to be used by current and potential users. At the base, you should make your work available in plain text, especially if you know it will be used quite a bit. Markdown is also very easy to master. Someone in class said they only write in HTML. But this markup text with such unnecessary elements that makes working with your source very difficult. Markdown is also a streamlined and productive way to write. This is why Markdown has replaced methods like HTML as an industry standard.</p>
+<h2 id="pandoc">Pandoc</h2>
+<p>But what do you actually do when you need to apply certain stylesheets to markdown, convert it, etc. Pandora is a command line tool that can do all sorts of things for markdown. You can convert to different formats like word or pdf. But you can also streamline more of your writing process. I swear, markdown should be a standard in the humanities. The thought of microsoft word makes me queasy. Used in conjunction with Zotero, which we <a href="Zotero-Sparql">discuss in the coming weeks</a>, humanities scholars can collect resources and manage their references with Zotero, download the bibliography file associated with those references, and use Pandoc to convert them to markdown. Pandora will also change the citation style, from Chicago to inline, etc. </p>
 
 </div>
 </div><!-- End #wrap -->
@@ -190,41 +176,15 @@
         </div>
 
         
-        <div class="social-div">
-            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=watch"
-                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
-            <iframe src="http://ghbtns.com/github-btn.html?user=rblades&amp;repo=http://github.com/rblades/rblades.github.io&amp;type=fork"
-                style="border: 0px; width: 53px; height: 20px; overflow: hidden;"></iframe>
-        </div>
-        
 
         
 
-        
-        <div class="social-div">
-        <a href="https://twitter.com/twitter.com/BladesRob" class="twitter-follow-button" data-show-count="false">Follow @twitter.com/BladesRob</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-                    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-                    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-            </script>
-        </div>
         
 
 
         <div class="clearfix"></div>
     </div>
 
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-73033829-1', 'http://rblades.github.io/open-notebook');
-      ga('send', 'pageview');
-
-    </script>
     
 
 </div>

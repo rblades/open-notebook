@@ -6,6 +6,69 @@
     <description>Open Research Notebook</description>
     
     <item>
+        <title>Open-Refine-OCR</title>
+        <link>http://rblades.github.io//open-notebook/Open-Refine-OCR.html</link>
+        <pubDate>Sun, 28 Feb 2016 20:45:53 EST</pubDate>
+        <description>This week is all about Dirty Data. As Seth Van Hooland writes with Open Refine, "If you only remember on thing from this lesson, it should be this: *all data is dirty, but you can do something about it.*"  Open Refine All of these tutorials we are doing either...</description>
+    </item>    
+    
+    <item>
+        <title>Zotero-Sparql</title>
+        <link>http://rblades.github.io//open-notebook/Zotero-Sparql.html</link>
+        <pubDate>Sun, 28 Feb 2016 10:29:51 EST</pubDate>
+        <description> Zotero Zotero is an amazing tool to save and share resources. It also has helped me from 2010 to gather and export my resources to a bibliography. Like all tools, though, using an API (application programming interface) allows you to tap a tool's potential. An API is essentially a...</description>
+    </item>    
+    
+    <item>
+        <title>WGET-and-Data-Mining-the-Internet-Archive</title>
+        <link>http://rblades.github.io//open-notebook/WGET-and-Data-Mining-the-Internet-Archive.html</link>
+        <pubDate>Sun, 28 Feb 2016 10:02:08 EST</pubDate>
+        <description> Wget There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is `-r` or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!...</description>
+    </item>    
+    
+    <item>
+        <title>Note-On-Installing-Software</title>
+        <link>http://rblades.github.io//open-notebook/Note-On-Installing-Software.html</link>
+        <pubDate>Sun, 28 Feb 2016 09:58:01 EST</pubDate>
+        <description>Be careful where you install software. I recently helped a colleague experiencing python problems: We attempted to install the internet archive for python to no avail on a mac. So mac already comes with python. I noticed that python was being called from one directory, while downloading to another. So...</description>
+    </item>    
+    
+    <item>
+        <title>Markdown-Pandoc</title>
+        <link>http://rblades.github.io//open-notebook/Markdown-Pandoc.html</link>
+        <pubDate>Sun, 28 Feb 2016 09:38:12 EST</pubDate>
+        <description> Markdown Markdown is a sustainable method to write. Your text becomes simply text read by the computer rather than text with stylesheets and all sorts of encoding attached to it. Thus anyone can copy and paste it, read it, etc. all from the source. Markdown, then, is in many...</description>
+    </item>    
+    
+    <item>
+        <title>Unix-Bash-Regex</title>
+        <link>http://rblades.github.io//open-notebook/Unix-Bash-Regex.html</link>
+        <pubDate>Sun, 28 Feb 2016 09:30:51 EST</pubDate>
+        <description> Unix The command line was used to access a computer before the development of Graphical User Interfaces (GUIs). Harkens back to low processing power and lack of a GUI. if you use an old machine, it can take over most of the commands. So why use the command line...</description>
+    </item>    
+    
+    <item>
+        <title>Untitled Note.5</title>
+        <link>http://rblades.github.io//open-notebook/Untitled Note.5.html</link>
+        <pubDate>Tue, 23 Feb 2016 13:35:05 EST</pubDate>
+        <description>In a meeting with my supervisor Shawn Graham, he critiqued our practice in the humanities that focuses on pre-applying theory to the content of our studies. He argued that theory comes out of practice and method. This became clear to me when I listened critically to what I was saying...</description>
+    </item>    
+    
+    <item>
+        <title>Untitled Note.4</title>
+        <link>http://rblades.github.io//open-notebook/Untitled Note.4.html</link>
+        <pubDate>Mon, 22 Feb 2016 17:13:54 EST</pubDate>
+        <description>Open Access: how to make information consumable and geared towards stakeholders, answering their needs, vs. presenting information in a way I would like to. There is a huge digital negotiation anticipating platforms in a public history project. It is public history because it is built taking into account the stakeholders....</description>
+    </item>    
+    
+    <item>
+        <title>Untitled Note.3</title>
+        <link>http://rblades.github.io//open-notebook/Untitled Note.3.html</link>
+        <pubDate>Mon, 22 Feb 2016 14:49:43 EST</pubDate>
+        <description>Have to use local js and css files for twine package Usually, we see historians as people who go out, gather information, stories, etc., and bring it back all in to tell a story. That somehow, the product is what counts. And I am not denying the interpretive power and...</description>
+    </item>    
+    
+    <item>
         <title>Loading-Audio-DAEA</title>
         <link>http://rblades.github.io//open-notebook/Loading-Audio-DAEA.html</link>
         <pubDate>Sun, 21 Feb 2016 12:54:16 EST</pubDate>
@@ -20,31 +83,10 @@
     </item>    
     
     <item>
-        <title>Untitled Note.3</title>
-        <link>http://rblades.github.io//open-notebook/Untitled Note.3.html</link>
-        <pubDate>Sat, 20 Feb 2016 16:14:58 EST</pubDate>
-        <description>Have to use local js and css files for twine package Usually, we see historians as people who go out, gather information, stories, etc., and bring it back all in to tell a story. That somehow, the product is what counts. And I am not denying the interpretive power and...</description>
-    </item>    
-    
-    <item>
         <title>Untitled Note</title>
         <link>http://rblades.github.io//open-notebook/Untitled Note.html</link>
         <pubDate>Fri, 19 Feb 2016 13:59:10 EST</pubDate>
         <description>pembroke fb group is a serious community around which people organize their lives and memory. I am not able to take that away from them. what is my relation to memory? Obviously immediately nana; she is like baba, helping me so much by her own volition - but what else?...</description>
-    </item>    
-    
-    <item>
-        <title>Untitled Note.6</title>
-        <link>http://rblades.github.io//open-notebook/Untitled Note.6.html</link>
-        <pubDate>Fri, 19 Feb 2016 10:12:03 EST</pubDate>
-        <description>Why Use the interface at all? Not only do you learn more about your machine, but you begin to master an integral way to access files. You'll have noticed that with the cat command, you see the beginning of regex. In the next lesson, Milligan and Baker go over this...</description>
-    </item>    
-    
-    <item>
-        <title>Untitled Note.5</title>
-        <link>http://rblades.github.io//open-notebook/Untitled Note.5.html</link>
-        <pubDate>Mon, 15 Feb 2016 16:01:37 EST</pubDate>
-        <description>Open Access: how to make information consumable and geared towards stakeholders, answering their needs, vs. presenting information in a way I would like to. There is a huge digital negotiation anticipating platforms in a public history project. It is public history because it is built taking into account the stakeholders....</description>
     </item>    
     
     <item>
@@ -59,20 +101,6 @@
         <link>http://rblades.github.io//open-notebook/Untitled Note.1.html</link>
         <pubDate>Mon, 08 Feb 2016 10:03:45 EST</pubDate>
         <description>I can see Sparql being used for some really cool visualizations to see patterns; however, it is only as good as its database...</description>
-    </item>    
-    
-    <item>
-        <title>Pandoc</title>
-        <link>http://rblades.github.io//open-notebook/Pandoc.html</link>
-        <pubDate>Sun, 31 Jan 2016 11:43:13 EST</pubDate>
-        <description>...</description>
-    </item>    
-    
-    <item>
-        <title>WGET-and-Data-Mining-the-Internet-Archive</title>
-        <link>http://rblades.github.io//open-notebook/WGET-and-Data-Mining-the-Internet-Archive.html</link>
-        <pubDate>Sun, 31 Jan 2016 11:41:23 EST</pubDate>
-        <description> Wget There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is `-r` or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!...</description>
     </item>    
     
     <item>
@@ -115,34 +143,6 @@
         <link>http://rblades.github.io//open-notebook/Hitchcock-6.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:35 EST</pubDate>
         <description>The current collection of digital material that forms the basis for most of our research is composed of the maudlin leavings of rich dead white men (and some rich dead white women). Until we get around to including the non-cannonical, the non-Western, the non-textual and the non-elite, we are unlikely...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-5</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-5.html</link>
-        <pubDate>Sun, 17 Jan 2016 14:20:32 EST</pubDate>
-        <description>There is an element of augmented reality in the layers of these digital sources. A source code is emulated as an interface. It is easy, then, to get caught up in the habit of clicking and getting. Digital humanists must learn the dirty art of doing the work themselves, least...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-4</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-4.html</link>
-        <pubDate>Sun, 17 Jan 2016 14:20:31 EST</pubDate>
-        <description>Everything has a history. As Hitchcock notes, DH historicity = ideas of codebreaking and 'cracking' from the 20th century. We fall into those same tropes and traps. In my own work on sound studies, this is particularly true of my map: listening has a history formed by years of recorded...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-3</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-3.html</link>
-        <pubDate>Sun, 17 Jan 2016 14:20:29 EST</pubDate>
-        <description>Confronted by people happy to define a point on the earth's surface as three simple numbers, and to claim that it was always so, was a shock. This is not to say that the archaeologists were being naïve, far from it, but that having been trained up as a text...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-2</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-2.html</link>
-        <pubDate>Sun, 17 Jan 2016 14:20:26 EST</pubDate>
-        <description>It feels to me as if our practise as humanists and historians is being driven by the technology, rather than being served by it. We are being driven by it only if we refuse to understand its structure and purpose and then critique it and our understanding of it. Hitchcock...</description>
     </item>    
     
 </channel>

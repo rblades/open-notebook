@@ -31,6 +31,126 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
+        <a href="http://rblades.github.io//open-notebook/Untitled Note.2.html">Untitled Note.2</a> 
+        <span class="pull-right text-muted">2016-02-09</span>
+    </div>
+    <div class="panel-body">
+        
+            <div class="htmltruncate-md">
+                <p>Zotero in my project: have to clip from newspapers.com to make it available, yet then it is only what I have clipped. Stability of online urls and IPs is uncertain. </p>
+                <div class="htmltruncate-bottom"></div>
+            </div>
+            <a href="http://rblades.github.io//open-notebook/Untitled Note.2.html" class="btn btn-default">...</a>
+        
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a href="http://rblades.github.io//open-notebook/Untitled Note.1.html">Untitled Note.1</a> 
+        <span class="pull-right text-muted">2016-02-08</span>
+    </div>
+    <div class="panel-body">
+        
+            <div class="htmltruncate-md">
+                <p>I can see Sparql being used for some really cool visualizations to see patterns; however, it is only as good as its database</p>
+                <div class="htmltruncate-bottom"></div>
+            </div>
+            <a href="http://rblades.github.io//open-notebook/Untitled Note.1.html" class="btn btn-default">...</a>
+        
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a href="http://rblades.github.io//open-notebook/Leaflet-Storymap-Audio.html">Leaflet-Storymap-Audio</a> 
+        <span class="pull-right text-muted">2016-01-20</span>
+    </div>
+    <div class="panel-body">
+        
+            <div class="htmltruncate-md">
+                <p>I wracked my brain for a whole day but I did it! I added audio to Jack Dougherty's <a href="https://github.com/JackDougherty/leaflet-storymap">leaflet storymap</a>.</p>
+<p>To do this:</p>
+<ol>
+<li>
+<p>Open your terminal and <code>cd</code> to the <code>leaflet-storymap</code> directory</p>
+</li>
+<li>
+<p>Make a new folder for audio files <code>mkdir audio</code></p>
+</li>
+<li>
+<p>Add your audio files to this new folder</p>
+</li>
+<li>
+<p>Open <code>script.js</code></p>
+</li>
+<li>
+<p>Underneath the <code>var source</code> code add </p>
+<pre class="codehilite"><code>  var audio = $('&lt;audio&gt;&lt;/audio&gt;', {
+    src: feature.properties['audio'],
+    controls: 'controls',
+    preload: 'auto',
+  });</code></pre>
+
+
+</li>
+<li>
+<p>Then, below the variables append audio to the container: <code>container.append(chapter).append(image).append(source).append(audio).append(description);</code></p>
+</li>
+<li>
+<p>Open <code>data.geojson</code></p>
+</li>
+<li>
+<p>After your <code>"source-link"</code> add <code>"audio": "audio/yourfile.mp3"</code></p>
+</li>
+<li>
+<p>Done!</p>
+</li>
+</ol>
+<p>It is not perfect. It is just a simple audio control that needs to have some stylistic adjustments. Also, I would rather have a glyphicon play/pause. I will update once I get that going. But for now, audio is functioning!</p>
+                <div class="htmltruncate-bottom"></div>
+            </div>
+            <a href="http://rblades.github.io//open-notebook/Leaflet-Storymap-Audio.html" class="btn btn-default">...</a>
+        
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a href="http://rblades.github.io//open-notebook/Welcome-HIST5702!.html">Welcome-HIST5702!</a> 
+        <span class="pull-right text-muted">2016-01-17</span>
+    </div>
+    <div class="panel-body">
+        
+            <div class="htmltruncate-md">
+                <h1 id="happy-to-start-hist5702">Happy to Start HIST5702!</h1>
+<p>I love GitHub! It is easy to push content to it. I also love the fact that I can run a free website from your account. I currently run <a href="http://bladesrob.com">my own site</a> with <a href="http://reclaimhosting.com/">Reclaim Hosting</a>. However, I also run my grad work at <a href="http://rblades.github.io">rblades.github.io</a> (with an <a href="http://rblades.github.io/open-notebook">open notebook</a> using <a href="http://brettterpstra.com/projects/nvalt/">nvALT</a>).</p>
+<p><img alt="image not responding" src="https://pixabay.com/static/uploads/photo/2012/04/10/23/42/document-27091_960_720.png" /></p>
+<p>In this course I get to learn while helping others. And it isn't just easy for me because I already knew GitHub, markdown, and other programs, software, and applications coming in. (I used Markdown to write a tutorial for the <a href="https://opendatakit.org/">Open Data Kit</a> for the <a href="http://programminghistorian.org/">Programming Historian</a> - <em>Still in development</em>.) For instance, I have learned how GitHub and other programs play with Windows (I use a Mac). I also learned on this site that markdown can store links in the following format:</p>
+<p><code>[id tag] &lt;http://website.com&gt;</code></p>
+<p>Before I was hyperlinking within text in this format:</p>
+<p><code>[preview text](http://website.com)</code></p>
+<p>In all, I also love using markdown, and here are the main reasons why:</p>
+<ul>
+<li>It is easily human readable</li>
+<li>It is clean and straightforard with easy styling and no tacked-on background encoding</li>
+<li>It is widely supported on many websites</li>
+<li>It is stripped of tags often found in html, xml, etc.</li>
+</ul>
+<p><img alt="alt text" src="https://pixabay.com/static/uploads/photo/2015/12/04/14/05/code-1076536_960_720.jpg" title="programming" /></p>
+<h3 id="why-i-am-actually-taking-this-course">Why I am <em>actually</em> taking this course</h3>
+<p>Admittedly I am taking this course to fullfill the final DH credit of my Masters. However, there is also a sentimental elements to it since the first class I took at Carleton was Digital History with Dr. Graham. I want to learn more digital tools and help others learn. I love collaboration.</p>
+<h3 id="what-i-want-from-this-course">What I want from this course</h3>
+<p>Not only do I want to learn new skills in this course, but I would like my fellow students to collaborate and apply these skills outside of the class for the digital humanities working group in the history department. </p>
+                <div class="htmltruncate-bottom"></div>
+            </div>
+            <a href="http://rblades.github.io//open-notebook/Welcome-HIST5702!.html" class="btn btn-default">...</a>
+        
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
         <a href="http://rblades.github.io//open-notebook/Understanding-Digital-Tools.html">Understanding-Digital-Tools</a> 
         <span class="pull-right text-muted">2016-01-17</span>
     </div>
@@ -60,81 +180,6 @@
                 <div class="htmltruncate-bottom"></div>
             </div>
             <a href="http://rblades.github.io//open-notebook/Hitchcock-10.html" class="btn btn-default">...</a>
-        
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Hitchcock-9.html">Hitchcock-9</a> 
-        <span class="pull-right text-muted">2016-01-17</span>
-    </div>
-    <div class="panel-body">
-        
-            <div class="htmltruncate-md">
-                <p>The digital is an augmented reality in Stuart Eve's terms - that is, a user works in the "real world while visually receiving additional computer generated or modelled information." But even non-digital historical work is an augmented reality in itself since we approach the past by layering sources and drawing out a complex reality. Hitchcock wants us to understand that the way we approach historical work is sufficient in the non-digital realm as well. Yet the 'reality' is that we face digital tools often and should embrace them. We ought to, though, use our methods of critical thinking to critique the digital tools we use because of the history they themselves have. We must adjust these skills and learn new practices (ex. reading code) to continue our critiques.</p>
-<h3 id="bibliography">Bibliography</h3>
-<p>Hitchcock, Tim. "<a href="http://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html">Big Data for Dead People: Digital Readings and the Conundrums of Positivism</a>." December 9, 2013.</p>
-                <div class="htmltruncate-bottom"></div>
-            </div>
-            <a href="http://rblades.github.io//open-notebook/Hitchcock-9.html" class="btn btn-default">...</a>
-        
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Hitchcock-6.html">Hitchcock-6</a> 
-        <span class="pull-right text-muted">2016-01-17</span>
-    </div>
-    <div class="panel-body">
-        
-            <div class="htmltruncate-md">
-                <blockquote>
-<p>The current collection of digital material that forms the basis for most of our research is &gt;composed of the maudlin leavings of rich dead white men (and some rich dead white women). &gt;Until we get around to including the non-cannonical, the non-Western, the non-textual and the &gt;non-elite, we are unlikely to be very surprised.</p>
-</blockquote>
-<p>The digital reflects traditional practice. It is easy to become enamoured by digital data, simply if by the interface or what it means to have big historical data across the web in a variety of formats. But these sources <strong>can</strong> reproduce the same narratives, leading to little new insight.</p>
-<h3 id="bibliography">Bibliography</h3>
-<p>Hitchcock, Tim. "<a href="http://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html">Big Data for Dead People: Digital Readings and the Conundrums of Positivism</a>." December 9, 2013.</p>
-                <div class="htmltruncate-bottom"></div>
-            </div>
-            <a href="http://rblades.github.io//open-notebook/Hitchcock-6.html" class="btn btn-default">...</a>
-        
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Hitchcock-5.html">Hitchcock-5</a> 
-        <span class="pull-right text-muted">2016-01-17</span>
-    </div>
-    <div class="panel-body">
-        
-            <div class="htmltruncate-md">
-                <p>There is an element of augmented reality in the layers of these digital sources. A source code is emulated as an interface. It is easy, then, to get caught up in the habit of clicking and getting. Digital humanists must learn the dirty art of doing the work themselves, least seeing how it is constructed. As much as there are digital tools for historical data, we need tools to help us understand underlying code structures. For example, <a href="https://webmaker.org/en-US/goggles">Mozilla web goggles</a> that show the elements of a web page.</p>
-<h3 id="bibliography">Bibliography</h3>
-<p>Hitchcock, Tim. "<a href="http://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html">Big Data for Dead People: Digital Readings and the Conundrums of Positivism</a>." December 9, 2013.</p>
-                <div class="htmltruncate-bottom"></div>
-            </div>
-            <a href="http://rblades.github.io//open-notebook/Hitchcock-5.html" class="btn btn-default">...</a>
-        
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Hitchcock-4.html">Hitchcock-4</a> 
-        <span class="pull-right text-muted">2016-01-17</span>
-    </div>
-    <div class="panel-body">
-        
-            <div class="htmltruncate-md">
-                <p>Everything has a history. As Hitchcock notes, DH historicity = ideas of codebreaking and 'cracking' from the 20th century. We fall into those same tropes and traps. In my own work on sound studies, this is particularly true of my map: listening has a history formed by years of  recorded noise. (Though for Ingold this is not the case necessarily since we have a biological history as well.) Reproducing recorded sounds digitally just reinforces traditional means of historical study rather than challenging it</p>
-<h3 id="bibliography">Bibliography</h3>
-<p>Hitchcock, Tim. "<a href="http://historyonics.blogspot.ca/2013/12/big-data-for-dead-people-digital.html">Big Data for Dead People: Digital Readings and the Conundrums of Positivism</a>." December 9, 2013.</p>
-                <div class="htmltruncate-bottom"></div>
-            </div>
-            <a href="http://rblades.github.io//open-notebook/Hitchcock-4.html" class="btn btn-default">...</a>
         
     </div>
 </div>

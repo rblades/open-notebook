@@ -29,173 +29,167 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Loading-Audio-DAEA.html">Loading-Audio-DAEA</a> 
-        <span class="pull-right text-muted">2016-02-21</span>
+        <a href="http://rblades.github.io//open-notebook/Open-Refine-OCR.html">Open-Refine-OCR</a> 
+        <span class="pull-right text-muted">2016-02-28</span>
     </div>
     <div class="panel-body">
         
             <div class="htmltruncate-md">
-                <p>Loading Audio into DAEA</p>
+                <p>This week is all about Dirty Data. As Seth Van Hooland writes with Open Refine, "If you only remember on thing from this lesson, it should be this: <em>all data is dirty, but you can do something about it.</em>"</p>
+<h2 id="open-refine">Open Refine</h2>
+<p>All of these tutorials we are doing either build upon each other or into each other. They are all connected and serve one another. For instance, the <a href="Unix-Bash-Regex">command line</a> tutorial shows us the importance of structuring files. Used in conjunction with Regex, we notice that working with good data is the key to less painful experiences in data mining. </p>
+<p>Open refine is a lot like Regex. Both are used to clean data for mining. Open Refine is a more visual way and much easier way to clean up data. It works well with Linked Open Data which we tackled using <a href="Zotero-SPARQL">SPARQL</a>. However, you can also use regex to clean up your open refine data. </p>
+<p>This tutorial was intuitive and open refine is easy to work with if you follow along. </p>
+<h2 id="ocr">OCR</h2>
+<p>The OCR tutorial begins by laying out the need to create a 'python dictionary' to handle relative data cleaning cases. Because applying one script to an entire document may clean areas with different context. We are going to use Pyton to prepare our data for Regex and other mining methods. </p>
+<p>The point of OCR is not to automate <strong>everything</strong>. We still have to be aware of our data and clean some things manually. For instance, when our script tells us it found 430 page headers, but we know there are 440 pages, we can then clean the other 10 pages. </p>
+<p>OCR reveals an important aspect of open access. Google for instance has digitized millions of books. But open access is not widely a humanities goal. As such, Google has merely made text available without taking much care of making it clean. Such is now the goal of the humanities scholar.</p>
+                <div class="htmltruncate-bottom"></div>
+            </div>
+            <a href="http://rblades.github.io//open-notebook/Open-Refine-OCR.html" class="btn btn-default">...</a>
+        
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a href="http://rblades.github.io//open-notebook/Zotero-Sparql.html">Zotero-Sparql</a> 
+        <span class="pull-right text-muted">2016-02-28</span>
+    </div>
+    <div class="panel-body">
+        
+            <div class="htmltruncate-md">
+                <h2 id="zotero">Zotero</h2>
+<p>Zotero is an amazing tool to save and share resources. It also has helped me from 2010 to gather and export my resources to a bibliography. Like all tools, though, using an API (application programming interface) allows you to tap a tool's potential. An API is essentially a set of rules, conditions, etc. for a tool that can work anywhere if you are using that API properly.</p>
+<p>The great thing about the Zotero API is that it is free and open source, but it also runs on python. This means it has a platform that we merely need to plug and play. So we can create new libraries, add items, etc. But, you may ask, can't we do this with the user interface as well?</p>
+<p>This is true, and like everything in digital humanities it comes down to personal preference. The Zotero API allows you to have more control over data. This may, however, not be something you need so you can stick to the firefox extension or desktop app. But think about the ways the API can be applied. Someone developed a chrome extension that uses Zotero's API so that chrome users can save resources to their accounts. It is a lightweight extension with no interface like the Firefox one. But you will only ever see the power in something where you can use it. </p>
+<h2 id="sparql">SPARQL</h2>
+<p>Linked Open Data (LOD) is only as good as its creator. SPARQL, one can argue, creates its only problems: it only works on websites that design LOD, thus needing to be aware of users wanting access to data; it then creates a bit of a feedback loop because only those people with the technical skill and foresight to create LOD actually do it. But a growing number of museums offer their databases through LOD. </p>
+<p>SPARQL is a language that queries these databases for you. It uses a structure of <code>subject - object - predicate</code> or in the tutorial example <code>&lt;The Nightwatch&gt; &lt;was created by&gt; &lt;Rembrandt van Rijn&gt;</code>. So you can end up searching for data of a specific kind and then exporting that data to a comma separated file, allowing you to work with it in a variety of platforms. The tutorial suggests you can visualize that data with Palladio. </p>
+<p>Several years ago I worked with data on the location of British Roman coins in Gephi. I thought I could query the museum for coins between 400 and 800 and I limited the count to 100 because it is mega slow.</p>
+<p>`# Return object links and creation date
+PREFIX bmo: <a href="http://collection.britishmuseum.org/id/ontology/">http://collection.britishmuseum.org/id/ontology/</a>
+PREFIX skos: <a href="http://www.w3.org/2004/02/skos/core#">http://www.w3.org/2004/02/skos/core#</a>
+PREFIX ecrm: <a href="http://erlangen-crm.org/current/">http://erlangen-crm.org/current/</a>
+PREFIX xsd: <a href="http://www.w3.org/2001/XMLSchema#">http://www.w3.org/2001/XMLSchema#</a>
+SELECT ?object ?date
+WHERE {</p>
+<p># We'll use our previous command to search only for objects of type "print"
+  ?object bmo:PX_object_type ?object_type .
+  ?object_type skos:prefLabel "coin" .</p>
+<p># We need to link though several nodes to find the creation date associated
+  # with an object
+  ?object ecrm:P108i_was_produced_by ?production .
+  ?production ecrm:P9_consists_of ?date_node .
+  ?date_node ecrm:P4_has_time-span ?timespan .
+  ?timespan ecrm:P82a_begin_of_the_begin ?date .</p>
+<p># Yes, we need to connect quite a few dots to get to the date node! Now that
+  # we have it, we can filter our results. Because we are filtering a date, we
+  # must attach the xsd:date tag to our date strings so that SPARQL knows how to
+  # parse them.</p>
+<p>FILTER(?date &gt;= "400-01-01"^^xsd:date &amp;&amp; ?date &lt;= "800-01-01"^^xsd:date)
+}</p>
+<p>LIMIT 100`</p>
+<p>Unfortunately I got nothing after waiting a very long time.</p>
+<p>So I changed the date to <code>FILTER(?date &gt;= "1280-01-01"^^xsd:date &amp;&amp; ?date &lt;= "1300-01-01"^^xsd:date)</code> and everything worked!</p>
+<p>I tried adding my work to Palladio but I just received garbled nonsense about HTML</p>
+                <div class="htmltruncate-bottom"></div>
+            </div>
+            <a href="http://rblades.github.io//open-notebook/Zotero-Sparql.html" class="btn btn-default">...</a>
+        
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a href="http://rblades.github.io//open-notebook/WGET-and-Data-Mining-the-Internet-Archive.html">WGET-and-Data-Mining-the-Internet-Archive</a> 
+        <span class="pull-right text-muted">2016-02-28</span>
+    </div>
+    <div class="panel-body">
+        
+            <div class="htmltruncate-md">
+                <h2 id="wget">Wget</h2>
+<p>There are other methods to download stuff on the internet. What makes wget good? Wow... you can do so much with such a tiny little command. The best aspect is <code>-r</code> or recursive retrieval which follows links from a website (to a certain depth). Mine all the things!</p>
+<p>I think it also comes down to the same old idea of software and platform we embrace - it is all about preference and usage needs.</p>
+<p>So let's do a quick run of wget. </p>
+<h3 id="windows-users">Windows Users</h3>
+<p>Data Mining the Internet archive is hard on Windows. Unix is <code>luv</code>, Unix is <code>lyf</code>.</p>
+<p>The tutorial was not at all geared for you. So beginner's with the command line could be confused. First! Windows does not use the UNIX (read: also mac) command <code>sudo</code>. The command line or Powershell will not recognize this command. </p>
+<p><code>sudo</code> executes a command as an administrator. You will have to type in your computer's password. As a security measure, Unix will not show your password, even as dots as you write.</p>
+<p>Do the following if <code>pip install</code> is not working</p>
 <ol>
-<li>Open aa-sites-popup.csv</li>
-<li>After <code>link</code> add a comma and <code>audio</code></li>
-<li>For each <code>audio</code> column, add audio html tags: <code>&lt;audio src="test.mp3" controls preload&gt;&lt;/audio&gt;</code></li>
-</ol>
-<p>For audio source, if you are hosting a local file, make sure to complete the path fully. For instance, if your audio file <code>test.mp3</code> is hosted in your project folder in <code>sounds</code> the path will be <code>&lt;audio src="sounds/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
-<p>If your audio file is hosted on a url, just put the url in your src: <code>&lt;audio src="http://soundwebsite/test.mp3" controls preload&gt;&lt;/audio&gt;</code></p>
-<ol>
-<li>Now we have to edit the map script in <code>index.html</code></li>
-<li>Navigate to the map script at the bottom of the page in <code>index.html</code>. You will see this:</li>
-</ol>
-<p><code>&lt;!-- Initiates Map and pulls data from .CSV --&gt;</code></p>
-<ol>
-<li>After <code>marker.toGeoJSON().properties.info + '&lt;br&gt;&lt;br&gt; ' +</code>, hit enter to create a new line and add <code>marker.toGeoJSON().properties.audio + '&lt;br&gt;&lt;br&gt;' +</code></li>
-<li>You can choose where to place the audio controls based on your preferences. If you want them after siteName, just add <code>marker.toGeoJSON().properties.audio + '&lt;br&gt;&lt;br&gt;' +</code> </li>
-<li>This binds audio to the leaflet GeoJSON data converted from your <code>aa-sites-popup.csv</code></li>
-<li>That's it!</li>
+<li>Make sure python is at your root folder <code>C:\</code> So you will have <code>C:\Python27</code></li>
+<li>In the command line at <code>C:\Python27</code> type <code>setx PATH "%PATH%;C:\Python27\Scripts"</code> (<em>NOTE:</em> You may need to restart your computer to run the next command)</li>
+<li>Go back to the folder you want to work in - from that folder in the command line type <code>python -m pip install internetarchive</code></li>
+<li>Profit</li>
 </ol>
                 <div class="htmltruncate-bottom"></div>
             </div>
-            <a href="http://rblades.github.io//open-notebook/Loading-Audio-DAEA.html" class="btn btn-default">...</a>
+            <a href="http://rblades.github.io//open-notebook/WGET-and-Data-Mining-the-Internet-Archive.html" class="btn btn-default">...</a>
         
     </div>
 </div>
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Audio in pykwiki.html">Audio in pykwiki</a> 
-        <span class="pull-right text-muted">2016-02-21</span>
+        <a href="http://rblades.github.io//open-notebook/Note-On-Installing-Software.html">Note-On-Installing-Software</a> 
+        <span class="pull-right text-muted">2016-02-28</span>
     </div>
     <div class="panel-body">
         
             <div class="htmltruncate-md">
-                <p>Below is an audio clip of me working, with talking around the last minute.</p>
-<p>Simply paste this code into nvALT, filling in the source with your audio (as a file or URL) <code>&lt;audio src="your source" controls preload&gt;&lt;/audio&gt;</code></p>
-<p><audio src="http://bladesrob.com/soundscape-audio/151110_0082.wav" controls preload></audio></p>
+                <p>Be careful where you install software. I recently helped a colleague experiencing python problems:</p>
+<p>We attempted to install the internet archive for python to no avail on a mac. So mac already comes with python. I noticed that python was being called from one directory, while downloading to another. So nothing was really working. There was an accidental install of python through home-brew. </p>
+<p>So I <code>brew uninstall python</code> and then that fixed the problem. It reverted to calling mac's install of python.</p>
+<p>Always watch where you install items. This is the importance of the command line!</p>
                 <div class="htmltruncate-bottom"></div>
             </div>
-            <a href="http://rblades.github.io//open-notebook/Audio in pykwiki.html" class="btn btn-default">...</a>
+            <a href="http://rblades.github.io//open-notebook/Note-On-Installing-Software.html" class="btn btn-default">...</a>
         
     </div>
 </div>
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Untitled Note.3.html">Untitled Note.3</a> 
-        <span class="pull-right text-muted">2016-02-20</span>
+        <a href="http://rblades.github.io//open-notebook/Markdown-Pandoc.html">Markdown-Pandoc</a> 
+        <span class="pull-right text-muted">2016-02-28</span>
     </div>
     <div class="panel-body">
         
             <div class="htmltruncate-md">
-                <p>Have to use local js and css files for twine package</p>
-<p>Usually, we see historians as people who go out, gather information, stories, etc., and bring it back all in to tell a story. That somehow, the product is what counts. And I am not denying the interpretive power and importance of historians. We learn valuable research and critical thinking skills for a reason. Rather, what I am trying to say is that this project - the historical stories and imagination - also exist in the Facebook group I interacted with. The people I spoke with. </p>
-<p>Following Ingold, I choose sound in its relation to task. </p>
-<p>I kept expecting to find stuff on Aboriginals. Nothing. They've been erased from the landscape. Pembroke does not even have its own recorded history</p>
-<p>Why is this public History? What needs does it meet?
-- Pembroke community interested in local history
-- Ethical idea of creating publics around local history with my project
-- Especially since focus is usually on logging not later industry (did not want to be another early history)
-- Want to challenge the historical narrative - I focus more on workers and strikes. I also don't want to repeat things about my relative (EA Dunlop). Paul Martin accused him of being unfair to his workers. The record show this. I want to challenge the idea of industrial success showing workers hardships. I also want to leave the project open to grow more complex and to include Aboriginal voices. We can respect people without revering them; respecting them as people in their historical contexts with values we do not hold, or actions we disagree with.
-- To present silences explicitly. What 'soundscapes' are missing?
-- Make this project salient for my audience - this is essentially a project for the people and communities I have interacted with; the timelines for each page with historical images is based on how I interacted with the publics involved, and also how I influenced them. I posted photos and received great feedback and interest. I was shown photos by family members, I heard of people who may want to post their stories. And that is what I learned about open access digital projects. Oral interviews are still necessary, but not the end-all as I had thought. My project is saved after all since people like to tell stories other ways, sharing their memories. Obviously my project prompts a specific way of thinking and thus sharing memory. The text becomes a certain performance. But it allows for a wider audience to participate than I originally aimed for.I am not saying this is a better method. Rather I want this experience to show the issues with open access and giving people their space and time to share their stories their own way. At the very most, this project as it stands, is a catalyst for memory and thus sharing stories. I hope by attempting to build accessibility into this website, create downloadable versions, and thinking about open access, I am able to share this story to a wider audience. However, I know that there are many communities for whom this website will not reach. I have to accept that there is a certain amount of a feedback loop in the sharing of this project and the telling of stories. It is my hope though that others will find it and be driven to contribute or fork it and make it their own. Maybe, then, they can tell the stories that I have failed to find.</p>
-<p>In many ways, what I did 'live' online that was most impactful was sharing in the Pembroke Facebook community. My book has comments mostly from me. Colleagues supported it, but never left feedback even if they read it. So people support the idea, but like most academic work, who really has time to read it/wants to?</p>
-<p>Open access is difficult. Just because things are open does not mean they are easy to access. Because of copyright laws, I cannot reproduce everything. I can provide a bibliography, but that stuff may not be open to others. I am working from within a university, with access to databases.</p>
-<p>People like to share - oral interviews can be limiting in a sense. (Importance of social media)</p>
-<p>Aside from Github, I did not document my errors well. </p>
-<p>__</p>
-<p>I choose not follow the newspaper narrative fully. I challenge the ads that glorify companies by showing strikes. I also show the importance of local strikes more than the Daily Observer (ex. which barely talked about 1966 Eddy strike, focusing on rail.)</p>
-<p>Digital soundscape: performative because I am storytelling with sound, based on the material history that is left over.</p>
-<p>I aim for a bit of reparation in sentences, to drill home the closing down of industry as ubiquitous</p>
-<p>I want the map to show the movement of place. A bit constrained digitally, but show how places move in a bit of chronology, highlight important places to show where resources came from, how close and important rail was for resources</p>
+                <h2 id="markdown">Markdown</h2>
+<p>Markdown is a sustainable method to write. Your text becomes simply text read by the computer rather than text with stylesheets and all sorts of encoding attached to it. Thus anyone can copy and paste it, read it, etc. all from the source. Markdown, then, is in many ways a way to write collaborative documents to be used by current and potential users. At the base, you should make your work available in plain text, especially if you know it will be used quite a bit. Markdown is also very easy to master. Someone in class said they only write in HTML. But this markup text with such unnecessary elements that makes working with your source very difficult. Markdown is also a streamlined and productive way to write. This is why Markdown has replaced methods like HTML as an industry standard.</p>
+<h2 id="pandoc">Pandoc</h2>
+<p>But what do you actually do when you need to apply certain stylesheets to markdown, convert it, etc. Pandora is a command line tool that can do all sorts of things for markdown. You can convert to different formats like word or pdf. But you can also streamline more of your writing process. I swear, markdown should be a standard in the humanities. The thought of microsoft word makes me queasy. Used in conjunction with Zotero, which we <a href="Zotero-Sparql">discuss in the coming weeks</a>, humanities scholars can collect resources and manage their references with Zotero, download the bibliography file associated with those references, and use Pandoc to convert them to markdown. Pandora will also change the citation style, from Chicago to inline, etc. </p>
                 <div class="htmltruncate-bottom"></div>
             </div>
-            <a href="http://rblades.github.io//open-notebook/Untitled Note.3.html" class="btn btn-default">...</a>
+            <a href="http://rblades.github.io//open-notebook/Markdown-Pandoc.html" class="btn btn-default">...</a>
         
     </div>
 </div>
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Untitled Note.html">Untitled Note</a> 
-        <span class="pull-right text-muted">2016-02-19</span>
+        <a href="http://rblades.github.io//open-notebook/Unix-Bash-Regex.html">Unix-Bash-Regex</a> 
+        <span class="pull-right text-muted">2016-02-28</span>
     </div>
     <div class="panel-body">
         
             <div class="htmltruncate-md">
-                <p>pembroke fb group is a serious community around which people organize their lives and memory. I am not able to take that away from them.</p>
-<p>what is my relation to memory? Obviously immediately nana; she is like baba, helping me so much by her own volition - but what else? the fb group... what else?</p>
-<p>Maps may be different, but not necessarily disruptive since they come from the same cartographic tradition. Just because it is older, does not necessarily mean it is different.</p>
-<p>given machine and impact</p>
-<p>I also have to be careful not to get kicked out of the Pembroke group for advertising my page too much; need to give back to community.</p>
-<p>I am finding more and more how small my publics are that I interact with.</p>
-<p>open access controls narrative: use what I can find based on availability. Pembroke Observer difficult to navigate, ottawa citizen is digitized (not that observer is somehow gold standard or infallible)... -- people help but they also want to see what I've dug up.</p>
-<p>It's not the best map; at this point now I could build a better one from scratch. But I learned. And I worked with someone else's code. And I learned how to build up another person's code with my own problems - to add to it</p>
-<p>Ethical decision: how do I represent the sound of protests? Will record my own voice and others on a sound background of ambient crowd using pickets from photographs, newspaper articles.</p>
-<p>Synchresis: creating a soundscape for memory. </p>
-<p>Not entirely accessible. I have failed here.</p>
-<p>File Organization and digital preservation - machine and human readable, file types, directories made, etc. Used CDN online instead of local files.</p>
-<p>From <a href="http://www.thedailyobserver.ca/2014/11/03/a-relaunch-for-the-pembroke-fibreboard-plant#">A relaunch for the Pembroke fibreboard plant</a> “I think tourism and forestry can get along,” he said closing with a stark warning. “If they close Algonquin Park these boards won't be here to supply all over the world.” Reminds me of being in Algonquin park and feeling entirely separate from the world immersed in quiet. When one morning over the ridge, all I hear is a chainsaw and people working. It shook me from my understanding of the land. It gave me an uneasy feeling that those sounds are ominously present. My understanding of the landscape changed immediately. I am not here passing a value judgment through that experience. Rather, I want you to understand the affect sound can have. Sounding ruins: reflections on the production of an ‘audio drift’ describes how sound can change place and bodily movements. However, we risk approaching these as 'historical tourists'. Speaking phenomenologically, I don't know how to get around this - I don't think we can. It is an entanglement in history since our own experience is mapped onto others'.</p>
-<p>My map fails to produce sound in a way other than digital output, so sound is not felt, etc as it is in person. There are no rumbles, changes to body and environment the same way.You still get those changes, but I would argue they are minimal.</p>
-<p>Mechanical limitation of map: some companies change locations every several years. I would have to rewrite the map source to change that</p>
-<p>Affect is in the sound. The text is rather 'factual'. A web page is silent. We don't immediately place sound on images or text (sound is placed differently by the imagination on a computer than real life?). Sound produces affect. I am gathering and employing sound clips honestly. What happens when you turn your sound off? What do you hear in the silences? This project is more a sonification of the past than recreating soundscapes because </p>
-<p>I don't have to be <em>the</em> authority. I can say the trail ends here and petition others to help. </p>
-<p>Having to rely on school's newspaper database, newspaper free trial, and searching microfilm is not exactly the open access we dream of. Open access should be about easy access to information. Using the observer online is not the best either because I cannot see each article in context. The graphical artefact has its meaning changed on a computer screen, being called by a server, presented in a new context with new styles, etc. Now, too I do not see ads or what others may see because of how my browser is set up. It is not just the information we are grabbing from these papers, but the context.</p>
-<p>Maybe an Aboriginal Soundscape would not even focus on industry. Maybe that would not be as high priority as I have given it. The industrial history is not even as high a priority for many. However large that Facebook group is, only a small minority of the people interact with the group, and they are even a specific public within that community. The Facebook page has become about them. </p>
-<p>I have realized that this soundscapes project reflect the theory of sound studies - sound is not isolated nor alone. It is entangled in perception. That is why I use it - though carefully - not in recreating a 'soundscape' but to trigger memory. My project focuses on memory and sound rather than acoustics of space and sound (explain sound bash) because I focus explicitly on producing affect related to memory. Not that acoustics and space cannot produce affect, but it is geared for a different experience of space over memory. To produce the same affect, I would have to create a sound walk in accessible places, triggered by geolocation. </p>
-<p>Strikes not front page news in Pembroke newspapers. Newspapers are not the best sources, but in the records I have, they are some of the best. I piece together this history with photos, newspapers, government documents, maps; I begin to locate sound in space; yet this is all an act of historical imagination. I didn't find the neat history I was looking for of newspapers mentioning "the sounds of strikers were heard around the town today". It's not bad for historians to have assumptions - that is how we find patterns in our sources. However, historians cannot rely on assumptions. Assumptions can help us begin our work, but we cannot fit our history into those initial assumptions. </p>
-<p>This project is not an attempt to recreate 'the' industrial soundscape of Pembroke. That is why I can apply ideas like synchresis. Rather, this project performs the past through sound to elicit memory and thus create community engagement. The framework was built to serve a community purpose: the code is all open; files, photographs, and sounds are all available to be viewed. I don't expect to 'get the sounds right'. I want, rather, to use this as a tool to begin exploring Pembroke's history. Thus it remains a very particularly crafted project. </p>
-<p>In part, the representation of an industrial soundscape is a product of necessity and accessibility. I believe in the new sound studies practice of using sound within space to understand the environment rather than attempting to reconstruct a 'soundscape', as if hearing is a distinct reality attained solely through perceiving noise through one's ears. But these spaces are unavailable. And the factories that remain are inaccessible to me. I could still attempt a sound study of space, akin to a sound bash. For the spaces without factories nevertheless have distinct markings of task and are understood as places of dwelling (See Ingold: taskscape). But I want to study the relationship between sound and memory with my Pembroke stakeholders in mind. I do not want an abstract sound project, but a deliverable accessible to and with input from my stakeholders (much of that input being implicit in the Facebook group, talking to people, understanding my audience) that 'forefronts' sound to understand how listening impacts memory, and retains the potential to grow and change as people interact with the website. Ultimately, and with great aspiration, this project could be a practical pedagogical tool.</p>
-                <div class="htmltruncate-bottom"></div>
-            </div>
-            <a href="http://rblades.github.io//open-notebook/Untitled Note.html" class="btn btn-default">...</a>
-        
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Untitled Note.6.html">Untitled Note.6</a> 
-        <span class="pull-right text-muted">2016-02-19</span>
-    </div>
-    <div class="panel-body">
-        
-            <div class="htmltruncate-md">
-                <p>Why Use the interface at all?</p>
+                <h2 id="unix">Unix</h2>
+<p>The command line was used to access a computer before the development of Graphical User Interfaces (GUIs). Harkens back to low processing power and lack of a GUI. if you use an old machine, it can take over most of the commands.</p>
+<p>So why use the command line at all anymore?</p>
 <p>Not only do you learn more about your machine, but you begin to master an integral way to access files. You'll have noticed that with the cat command, you see the beginning of regex. In the next lesson, Milligan and Baker go over this more and show what commands like grep and wc can do. We are building towards more powerful regex</p>
-<p>Harkens back to low processing power: if you use an old machine, it can take over most of the commands.</p>
 <p>"The primary reason is the seamless experience of working on the command line: you never have to pick up your mouse or touch your track pad, and, although it has a steep learning curve it can eventually become a sole writing environment."</p>
-<p>You should set your machine to work for you.</p>
-<p>Vim is a fork of Vi, an editor for the Unix command line.</p>
-<p>How can you see editing in the command line integral to regex? (fixing lines).</p>
+<p>Vim is a fork of Vi, an editor for the Unix command line. But vim is difficult to understand. Using the command line is a personal choice. But you should set your machine to work for you. The point of these tutorials is that you can tap the potential of the command line and even use it to do anything on the computer.</p>
 <p>You should also read this: http://programminghistorian.org/lessons/preserving-your-research-data suggested by the mining research data article. Mining data, searching, etc. will help you immensely. Meta-data is so important</p>
-<hr />
+<h2 id="regex">Regex</h2>
 <p>Regular expression tutorial makes an important point. This is not about becoming a programmer. Programming takes years to master and you might find it interesting but don't exactly want to get into it. There is a lot of stuff going on in life. That's what these tutorial do - help you modify your workflow and use modern tools and methods to increase productivity. </p>
-<p>I prefer text wrangler. You have to know your text at some level to know what to change. Larger files will be more difficult to clean up, more consistent files will be easier, bad OCR will lead to poor results if not cleaned.</p>
-<p>Having data in XML is so helpful</p>
+<p>You have to know your text at some level to know what to change. Larger files will be more difficult to clean up, more consistent files will be easier, bad OCR will lead to poor results if not cleaned.</p>
+<p>In the end, your platform effects what you can do and what you type: I prefer text wrangler to handle regex. Having data in XML is so helpful because you have a structured file to apply practically anywhere.</p>
                 <div class="htmltruncate-bottom"></div>
             </div>
-            <a href="http://rblades.github.io//open-notebook/Untitled Note.6.html" class="btn btn-default">...</a>
-        
-    </div>
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading">
-        <a href="http://rblades.github.io//open-notebook/Untitled Note.5.html">Untitled Note.5</a> 
-        <span class="pull-right text-muted">2016-02-15</span>
-    </div>
-    <div class="panel-body">
-        
-            <div class="htmltruncate-md">
-                <p>Open Access: how to make information consumable and geared towards stakeholders, answering their needs, vs. presenting information in a way I would like to.</p>
-<p>There is a huge digital negotiation anticipating platforms in a public history project. It is public history because it is built taking into account the stakeholders. The line is grey between 'public history' and 'regular history' because of the potential each digital project has to be viewed by the public. But here, a public history digital project is one that accounts, expects, and <em>must</em> be built for a wider community usage rather than just a project that works on your machine. In other words, it means taking into account a range of accessibility issues rather than building solely around your platform. </p>
-<p>Yet at some point, you cannot fully sacrifice a project to satisfy outdated or poorly browsers. There is some functionality in my website that may slow with poor bandwidth or poor functioning browsers like Internet Explorer of Opera. On the other hand - with a project involving open access and reproducibility - I cannot create a completely experimental design that is only supported by ultra-modern browsers with full support, run on a machine with high working memory, and a network with consistent speeds. I tried to account for these issues by configuring the website for all major browser standards, as well as offering this project to be downloaded as a desktop app. That way, aside from the initial download, I remove network issues running this project online. In a typical website, a server hosts all files which are called by the user only when needed. For instance, your computer does not preload all the pages of a website. Rather, when you click a link to go to the next page of the website, it sends a request to the server for that page. Now, this is not the absolute case - not only do scripting and stylistic elements preload on a web page, but newer, single page web applications preloads the pages of a website which increases a websites speed and efficiency (ex. see this SPA I created using AngularJS captialhistory.ca).</p>
-<p>Throughout building this project, I struggled with the core principle that underlies my actions and creative powers: open access. The goal was to use digital projects as a kind of historiography of open access (where git commits, code commenting, etc. acts as a historiographical record). I would take the source code of a current digital project on Github, fork and modify the code to fit my needs. I started with DAEA but found Jack Dougherty's storymap more tailored to my needs (which in turn was forked on a Github project based on a different Mapbox project). Yet every project has its limitations. I had less control than I needed over my project with the storymap source code because it is currently controlled through javascript. I could have completely overhauled the project, designing it so that the map is primarily controlled through HTML elements with GeoJSON rather than javascript controlling HTML interpreted through GeoJSON (as in the original Mapbox code https://www.mapbox.com/mapbox.js/example/v1.0.0/scroll-driven-navigation/). There were other options to present an interactive story-driven map (http://tympanus.net/codrops/2015/12/16/animated-map-path-for-interactive-storytelling/). But with the principle of open access, the leaflet javascript library that serves as the engine for my scroll driven map is entirely open source - meaning anyone can build upon it, making it there own - has full documentation, is used widely across many disciplines, and, therefore, has a great support community that consistently designs and produces new features. </p>
-<p>Finally, I am bound by the practical time limitations of this project. I also had to do the actual historical fieldwork and archival research; write the front end website text for the users; manage file names and directories, comment on and explain code (ie. future proofing my work); procure and organize photos and sounds; scan and georectify the historical maps; and finally write a reflection on my work. All of these variables meant that I ended up with the project currently online, even if it is not the final product I necessarily wanted. Therefore, in my experience on this and other digital projects, I offer this definition of public history work: <strong>the practice of producing a collaborative project that anticipates the explicit and implicit negotiated needs of constantly shifting known and unknown stakeholders, within a seemingly infinite and simultaneous dance of recursive and discursive 'limitations' that you recognize as forever incomplete.</strong> Public History work is about as easy to navigate as that definition. Put simply public historians are marketers acting with post structuralist ideas of history. And we must be honest about the stakeholders that 'drive' our work and build in the potential to expand that work. I did this by letting people tell their own stories, brushing both against and along the historical narrative, and making my work entirely open and reproducible. By showing the history of strikes and recognizing that there is a history before settlers in Pembroke, that sounds are not entirely the same to everyone, I hope to cause a positive level of discomfort. But, of course, this is a subtle art. </p>
-<p>But there is one final issue that arose on this last point: people expect historians to tell them facts and stories about the past. Maybe this project will be viewed with an academic backdrop and thus not receive the same input or level of discussion as when I post archival photos to Pembroke. I hope I made this map accessible enough (with the map, historical maps, timeline, and sounds).</p>
-                <div class="htmltruncate-bottom"></div>
-            </div>
-            <a href="http://rblades.github.io//open-notebook/Untitled Note.5.html" class="btn btn-default">...</a>
+            <a href="http://rblades.github.io//open-notebook/Unix-Bash-Regex.html" class="btn btn-default">...</a>
         
     </div>
 </div>
