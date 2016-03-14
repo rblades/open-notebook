@@ -6,6 +6,20 @@
     <description>Open Research Notebook</description>
     
     <item>
+        <title>Untitled Note.7</title>
+        <link>http://rblades.github.io//open-notebook/Untitled Note.7.html</link>
+        <pubDate>Sat, 05 Mar 2016 22:50:17 EST</pubDate>
+        <description>([_-])\w+ to clean dashes and underscores. (.mp)\w to clean mp3 (.og)\w...</description>
+    </item>    
+    
+    <item>
+        <title>Untitled Note.6</title>
+        <link>http://rblades.github.io//open-notebook/Untitled Note.6.html</link>
+        <pubDate>Tue, 01 Mar 2016 09:19:29 EST</pubDate>
+        <description>The tutorial works with PIL, but Mac users can instead install Pillow, a maintained fork of PIL, using `sudo pip install Pillow`. Simply run `python punctuation.py` and open your generated image....</description>
+    </item>    
+    
+    <item>
         <title>Open-Refine-OCR</title>
         <link>http://rblades.github.io//open-notebook/Open-Refine-OCR.html</link>
         <pubDate>Sun, 28 Feb 2016 20:45:53 EST</pubDate>
@@ -129,20 +143,6 @@
         <link>http://rblades.github.io//open-notebook/Hitchcock-10.html</link>
         <pubDate>Sun, 17 Jan 2016 14:20:42 EST</pubDate>
         <description>We are not just distant reading sources - we are distant reading the historicity of these digital tools and the practices and methods entangled in them through years of habit and process. We are taking our critiques into the digital realm to offer Sarah Durrant to historical care and attention...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-9</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-9.html</link>
-        <pubDate>Sun, 17 Jan 2016 14:20:41 EST</pubDate>
-        <description>The digital is an augmented reality in Stuart Eve's terms - that is, a user works in the "real world while visually receiving additional computer generated or modelled information." But even non-digital historical work is an augmented reality in itself since we approach the past by layering sources and drawing...</description>
-    </item>    
-    
-    <item>
-        <title>Hitchcock-6</title>
-        <link>http://rblades.github.io//open-notebook/Hitchcock-6.html</link>
-        <pubDate>Sun, 17 Jan 2016 14:20:35 EST</pubDate>
-        <description>The current collection of digital material that forms the basis for most of our research is composed of the maudlin leavings of rich dead white men (and some rich dead white women). Until we get around to including the non-cannonical, the non-Western, the non-textual and the non-elite, we are unlikely...</description>
     </item>    
     
 </channel>
